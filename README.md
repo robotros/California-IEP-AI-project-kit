@@ -10,6 +10,18 @@
 
 **Version:** 2.0 · **Source notes last researched:** 2026-10-14 · **Audience:** California educators, case managers, related-service providers, curriculum teams and reviewers.
 
+## Set up with your AI assistant — one shareable link
+
+**No Git or coding required for educators.** Copy this link into an AI assistant that can read public GitHub files:
+
+**[Open the guided AI setup instructions](AI_SETUP.md)**
+
+`https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md`
+
+> **Copy into your AI chat:** Set up both California Special Education AI projects using the guide at https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Read the files first. Configure whatever your platform actually supports; otherwise guide me through each action one step at a time. Start with fictional test data, never real student records, and verify each configuration before saying it is complete.
+
+The guide creates two **separate configured AI projects or platform equivalents**. It is not a software installer, and no AI service can guarantee automatic setup across every provider. If your assistant cannot open GitHub links, open [AI_SETUP.md](AI_SETUP.md) yourself and paste the instructions, or upload the public Markdown files. Agent-capable tools may also read [AGENTS.md](AGENTS.md) and the [machine-readable project manifest](setup/project-manifest.json).
+
 ## Quick start
 
 1. **Clone/unzip the repository.** No installation or dependencies are required; these are Markdown instructions and templates.
@@ -28,6 +40,10 @@
 ```text
 california-special-education-ai/
 ├── README.md
+├── AI_SETUP.md                 # Shareable setup link and guided AI procedure
+├── AGENTS.md                   # Entry point for repository-aware AI agents
+├── setup/
+│   └── project-manifest.json   # File map for automated or manual setup
 ├── .gitignore
 ├── .gitattributes
 ├── projects/
@@ -117,7 +133,7 @@ For a longer walkthrough, see [`docs/WORKFLOW.md`](docs/WORKFLOW.md).
 
 ```bash
 git init
-git add README.md .gitignore .gitattributes projects templates references prompts examples docs
+git add README.md AI_SETUP.md AGENTS.md setup .gitignore .gitattributes projects templates references prompts examples docs
 git commit -m "Add California special education AI project kit v2.0"
 ```
 
