@@ -1,1 +1,52 @@
-
+{
+  "kit": "California Special Education AI Project Kit",
+  "version": "2.0",
+  "guide": "AI_SETUP.md",
+  "kind": "ai-project-instructions-and-markdown-templates",
+  "installation_model": "configure-two-independent-ai-projects-or-equivalents",
+  "base_url": "https://github.com/robotros/California-IEP-AI-project-kit",
+  "student_information_policy": "Use synthetic/de-identified examples for setup; never upload identifiable student records to unapproved services or public repositories.",
+  "projects": [
+    {
+      "id": "essential-standards",
+      "name": "California Essential Standards AI",
+      "instructions": "projects/essential-standards/PROJECT_INSTRUCTIONS.md",
+      "required_supporting_files": [
+        "references/authoritative-sources-and-rules.md",
+        "templates/standards/essential-standards-review.md",
+        "templates/standards/standards-to-goal-crosswalk.md"
+      ],
+      "optional_supporting_files": [
+        "templates/shared/local-configuration.md",
+        "prompts/ready-to-use-prompts.md",
+        "examples/fictional-worked-example.md"
+      ]
+    },
+    {
+      "id": "iep-goal-generator",
+      "name": "California IEP Goal Generator 2.0",
+      "instructions": "projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md",
+      "required_supporting_files": [
+        "references/authoritative-sources-and-rules.md",
+        "templates/iep/student-profile-intake.md",
+        "templates/iep/present-levels-baseline.md",
+        "templates/iep/goal-request.md",
+        "templates/iep/goal-output.md",
+        "templates/standards/standards-to-goal-crosswalk.md",
+        "templates/shared/quality-review-and-approval.md"
+      ],
+      "optional_supporting_files": [
+        "templates/shared/local-configuration.md",
+        "prompts/ready-to-use-prompts.md",
+        "examples/fictional-worked-example.md"
+      ]
+    }
+  ],
+  "manual_workflow": "docs/WORKFLOW.md",
+  "verify_setup_with": "AI_SETUP.md#phase-5--validate-each-configuration-with-synthetic-data",
+  "limitations": [
+    "Not an executable installer",
+    "Cross-platform automation depends on each AI tool and account permissions",
+    "Educational drafting aid; human verification and authorized IEP review required"
+  ]
+}
