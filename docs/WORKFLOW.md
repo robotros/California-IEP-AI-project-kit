@@ -1,5 +1,7 @@
 # Implementation workflow
 
+**New to the project?** Start with the [AI-assisted guided setup](../AI_SETUP.md) to configure the two assistants, or follow the manual steps below.
+
 This document expands the [root README](../README.md) with a practical sequence for using both AI projects. Use **synthetic examples** when testing, and follow school/LEA authorization before processing any real education records.
 
 ## 1. Establish governance
