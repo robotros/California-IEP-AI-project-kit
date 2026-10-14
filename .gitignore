@@ -1,0 +1,38 @@
+# Local student records or unapproved education data — never commit
+student-data/
+student_records/
+student-records/
+private/
+local-data/
+local-config/
+working/
+outputs/
+exports/
+reports/
+
+# Local environment, credentials, and runtime artifacts
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editor, OS, and accidental scratch files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+.tmp/
+tmp/
+
+# Note: .gitignore does NOT protect secrets or student records already committed.
+# Store identifiable data only in a separately approved, access-controlled system.
