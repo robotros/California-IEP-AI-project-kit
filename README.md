@@ -1,8 +1,8 @@
-# California Special Education AI Project Kit (v2.0)
+# California Special Education AI Project Kit (v2.3.1)
 
 **Markdown-first, Git-ready toolkit** for two coordinated projects:
 
-1. **California IEP Goal Generator 2.0** — drafts and reviews individualized, measurable annual IEP goals from documented present levels, baseline evidence, and relevant standards.
+1. **California IEP Goal Generator** — drafts and reviews individualized, measurable annual IEP goals from documented present levels, baseline evidence, and relevant standards.
 2. **California Essential Standards AI** — verifies California standards, supports transparent local priority/essential-standard selection, and prepares a standards-to-goal handoff.
 
 > [!IMPORTANT]
