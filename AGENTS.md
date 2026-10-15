@@ -4,11 +4,15 @@ This repository provides **Markdown configuration and reference files**, not a d
 
 ## Configurations
 
-Choose `lightweight` by default. See `setup/project-manifest.json` for exact 2-file or 5-file bundles for **each** of the two projects. Do not upload the separate `PROJECT_INSTRUCTIONS.md` when the platform supports pasting it into its persistent instructions field. Never attach both editions at once. On ChatGPT Free, knowledge uploads count against a 5-file per-project cap and a separate daily upload-rate limit.
+Choose `lightweight` by default. See `setup/project-manifest.json` for exact 2-file or 5-file bundles for **each** of the two projects. Never attach both editions at once. On ChatGPT Free, knowledge uploads count against a 5-file per-project cap and a separate daily upload-rate limit.
 
+ChatGPT project Instructions allow at most 8000 characters. Paste the maintained summary into that field and upload the full `PROJECT_INSTRUCTIONS.md` as a knowledge file:
 
-- **California Essential Standards AI:** use `projects/essential-standards/PROJECT_INSTRUCTIONS.md` as the primary instruction text.
-- **California IEP Goal Generator:** use `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md` as the primary instruction text.
+- **California Essential Standards AI:** summary `projects/essential-standards/INSTRUCTIONS_SUMMARY.md` (7484 characters). Full text: `projects/essential-standards/PROJECT_INSTRUCTIONS.md`.
+- **California IEP Goal Generator:** summary `projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md` (6386 characters). Full text: `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`.
+
+If the assistant cannot create persistent projects — including Grok — do not stop after saying so. Start the manual in-chat walkthrough immediately, have the user paste or attach each file, and do not claim a project was created.
+
 - The public `references/` and `templates/` files are support material, not substitutes for instructions.
 - Use only public fictional sample data for testing. Never request, commit, upload, display, or echo student-identifiable records during setup.
 
@@ -24,7 +28,7 @@ Treat these as *conversation inputs*, not permanent project knowledge files. Rev
 ## Agent behavior
 
 1. Confirm which AI platform the educator uses and what capabilities are available. Do not assume the power to create persistent projects or attach documents.
-2. Configure directly **only when tooling, account permissions, and user authorization allow it**. Otherwise walk through manual steps one at a time.
+2. Configure directly **only when tooling, account permissions, and user authorization allow it**. Otherwise start the manual in-chat walkthrough in the same reply. Do not end on a refusal. The user pastes or attaches the summary or full instructions and the edition files. Proceed one step at a time. Do not claim a project was created.
 3. Do not infer missing California standards, official codes, school rules, IEP baselines, or legal compliance. Require source verification and human review.
 4. Do not present unperformed actions as completed. Verify instruction placement and files before declaring either project ready.
 5. Do not claim this repository's content is executable software or a package installer.

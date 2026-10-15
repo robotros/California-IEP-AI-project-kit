@@ -1,6 +1,6 @@
 # IEP Goal Generator — Lightweight Forms and Workflow
 
-**Edition:** LIGHTWEIGHT. **Knowledge file 1 of 2.** Paste the separate `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md` into the AI project's **Instructions** field. This is a support file, not a substitute for the project instructions.
+**Edition:** LIGHTWEIGHT. **Knowledge file 1 of 2.** On ChatGPT, paste `projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md` (under 8000 characters) into **Instructions** and upload the full `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md` as a knowledge file. This support file is not a substitute for those instructions.
 
 > For setup and testing, use only synthetic or appropriately de-identified information. Do not upload identifiable student records except within a formally authorized educational workflow. These are **drafting aids**; educators and the IEP team make final decisions.
 

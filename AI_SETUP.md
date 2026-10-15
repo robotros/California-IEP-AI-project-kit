@@ -8,7 +8,7 @@ This repo distributes **guided AI project configuration**, not an application or
 
 ## Copy/paste this prompt into your AI chat
 
-> Please read this guide and set up the two California Special Education AI projects: https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Start by recommending the **Lightweight edition** for a Free account; explain the Full edition as an option. Read the exact Project Instructions and knowledge-file paths from the manifest. Determine which settings you can actually change, then either configure them with permission or walk me through one step at a time. Don't request real student data. Check both configurations with fictional test prompts, and clearly state which steps were completed versus still need my action. Then introduce the educator intake form and prompt me to paste or attach its generated Markdown in the matching project when I am ready for a task.
+> Please read this guide and set up the two California Special Education AI projects: https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Start by recommending the **Lightweight edition** for a Free account; explain the Full edition as an option. Read the instruction summaries, full Project Instructions, and knowledge-file paths from the manifest. If you cannot create persistent projects or attach files — including if you are Grok — do not stop. Immediately walk me through setup in this chat, one step at a time, and tell me which file to paste or attach next. Do not claim a project was created. On ChatGPT, paste each project's instruction summary (under 8000 characters) into Instructions and upload the full `PROJECT_INSTRUCTIONS.md` as a knowledge file. Don't request real student data. Check both configurations with fictional test prompts, and clearly state which steps were completed versus still need my action. Then introduce the educator intake form and prompt me to paste or attach its generated Markdown in the matching project when I am ready for a task.
 
 ## Required onboarding handoff — introduce the educator form
 
@@ -21,27 +21,46 @@ Educators do **not** have to type directly into the Markdown template files. Use
 | **Lightweight (default)** | **2** | 3 | Fast educator setup, future project documents |
 | **Full** | **5** | 0 | Detailed original templates and examples |
 
-Both editions use the **same core Project Instructions**, pasted into the dedicated project instructions field. See [edition comparison](editions/README.md).
+Both editions keep the **same full Project Instructions files**. ChatGPT's project Instructions field accepts at most **8000 characters**, and both full files are longer than that. On ChatGPT, paste the maintained summary into Instructions and upload the full `PROJECT_INSTRUCTIONS.md` as a knowledge file. See [edition comparison](editions/README.md).
 
-**Verified ChatGPT limits (reviewed October 2026):** Free up to 5 project files; Go/Plus up to 25; Pro/Edu/Business/Enterprise up to 40. There is also a separately published Free rate limit of 3 uploaded files/day, so installing both lightweight projects (4 total uploads) could require more than one day. Project file availability varies across non-ChatGPT platforms. Sources: [OpenAI Projects Help](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt), [OpenAI uploads Help](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt).
+**Verified ChatGPT limits (reviewed October 2026):** Instructions field, 8000 characters. Free up to 5 project files; Go/Plus up to 25; Pro/Edu/Business/Enterprise up to 40. Free also has a published rate limit of 3 uploaded files/day. A ChatGPT project upload set is the edition files **plus** the full instructions file: Lightweight is 3 files (2 slots left on Free); Full is 6 files and does not fit a Free project's 5-file cap. Use Lightweight on Free when the full instructions file must be uploaded. Sources: [OpenAI Projects Help](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt), [OpenAI uploads Help](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt).
 
 ## Step 2 — How the AI assistant must operate
 
 1. Read **this file** and [`setup/project-manifest.json`](setup/project-manifest.json), then the referenced two project instruction files. Do not infer contents from file names.
 2. If the user's platform is unknown, ask: "Which AI tool are you using?" Prefer **lightweight** unless they choose full. Ask only what is genuinely necessary.
-3. Explain capability honestly: Can you create/configure persistent projects, edit their instructions, attach files, and verify results? Do not claim account-level actions that were not performed.
-4. If capable **and authorized**, create two persistent, separately named projects. If not, guide step by step. If platform has no project support, offer two separate persistent configured assistants or independent chats, stating any lack of persistence.
-5. **Paste exact content** of each `PROJECT_INSTRUCTIONS.md` into its corresponding **Project Instructions** configuration. This is not a file upload where the platform provides a separate instruction field.
-6. Attach only the selected edition's `knowledge_files` for each project, as listed in the manifest. For ChatGPT Free, do not exceed five uploaded files per project. Do not upload the instruction text again as a knowledge file unless intentionally accepting that it consumes a file slot.
-7. Explain how one project hands off verified standards in the crosswalk to the other. The assistants do not automatically share chats, data or knowledge.
-8. Run the fictional configuration tests below. Report what was *actually verified* and what still needs user action.
-9. **Complete the form handoff.** After successful setup, show the appropriate form location, offer to guide the educator through it, and tell them exactly which named `.md` output to paste/attach to which project. Do not request real student data in the setup chat.
+3. State what you can and cannot change, in one sentence. If you cannot create named projects, edit an Instructions field, or attach knowledge files — including **Grok (xAI)** and any chat-only assistant — do **not** stop and do **not** end the reply on that refusal. Continue in the same reply with **Step 2b**. Do not claim a project was created.
+4. If you can change project settings **and** the user authorized it, create two separately named projects, then follow **Step 2a**. Do not claim a setting changed until the platform shows that it changed.
+5. Attach the selected edition's `knowledge_files` from the manifest. On ChatGPT, also upload that project's full `PROJECT_INSTRUCTIONS.md`. Do not exceed the account's file cap. Do not upload both editions.
+6. Explain how one project hands off a verified standards crosswalk to the other. The assistants do not automatically share chats, data, or knowledge.
+7. Run the fictional configuration tests below. Report what was *actually verified* and what still needs user action.
+8. **Complete the form handoff.** After successful setup, show the appropriate form location, offer to guide the educator through it, and tell them exactly which named `.md` output to paste/attach to which project. Do not request real student data in the setup chat.
+
+### Step 2a — Where the instruction text goes
+
+**ChatGPT:** Paste the project's instruction **summary** into the Instructions field. Do not paste the full `PROJECT_INSTRUCTIONS.md` there; it is over 8000 characters and will not fit. Then upload that full file as a knowledge file, in addition to the edition files. Recorded summary lengths: Essential Standards **7484** characters (`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`); IEP Goal Generator **6386** characters (`projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md`). Both are strictly under 8000. The full instruction files stay intact.
+
+**Another platform whose Instructions field accepts the full file:** paste `PROJECT_INSTRUCTIONS.md` into that field. Upload it as knowledge only when that platform has no separate Instructions field, or when the user asks for the full text to be loaded as a file.
+
+**ChatGPT Free file count:** Lightweight = 2 edition files + 1 full instructions file (3). Full = 5 edition files + 1 full instructions file (6), which is over the 5-file Free cap. On Free, use Lightweight if the full instructions file is uploaded.
+
+### Step 2b — Grok and any assistant that cannot create projects
+
+Use this path for Grok and for every platform that cannot create persistent projects or attach knowledge files. The limitation is one sentence. The rest of the reply is the walkthrough.
+
+1. Recommend **Lightweight** unless the user already chose Full. Say that this chat is the working session. Do not say a named project exists.
+2. Ask the user to paste or attach the next file into **this chat**. Start with `projects/essential-standards/INSTRUCTIONS_SUMMARY.md` (or the full Essential Standards `PROJECT_INSTRUCTIONS.md` if they prefer). Then ask for that edition's knowledge files, one batch at a time.
+3. When the text is in the chat, follow it here. Then do the same for California IEP Goal Generator: summary or full instructions, then its edition files.
+4. If a file is not in the chat yet, name that exact path and wait for it. Do not skip ahead by inventing standards, baselines, or local rules.
+5. Run the fictional tests in this chat, then introduce the educator form. The user pastes or attaches the generated intake here unless they later create projects themselves.
 
 ## Step 3 — Exact project instructions and file paths
 
 ### Project A — California Essential Standards AI
 
-**Project instructions (paste as text):** [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md).
+**ChatGPT Instructions (paste this summary, 7484 characters):** [`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`](projects/essential-standards/INSTRUCTIONS_SUMMARY.md).
+
+**Full instructions (keep intact; upload as a ChatGPT knowledge file):** [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md).
 
 **Lightweight knowledge files — upload both (2/5):**
 
@@ -58,7 +77,9 @@ Both editions use the **same core Project Instructions**, pasted into the dedica
 
 ### Project B — California IEP Goal Generator
 
-**Project instructions (paste as text):** [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md).
+**ChatGPT Instructions (paste this summary, 6386 characters):** [`projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md`](projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md).
+
+**Full instructions (keep intact; upload as a ChatGPT knowledge file):** [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md).
 
 **Lightweight knowledge files — upload both (2/5):**
 
@@ -127,7 +148,7 @@ Report for each project: name; selected edition; instructions installed vs copie
 
 ### Platforms that can't fetch GitHub URLs
 
-Open this [setup page](https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md) manually and paste this procedure into the AI conversation. Download the [repo ZIP](https://github.com/robotros/California-IEP-AI-project-kit/archive/refs/heads/main.zip) and upload only the files for the chosen edition (not the whole ZIP as a single knowledge document). If the assistant cannot change persistent project settings, it can still guide you with copy/paste instructions.
+Open this [setup page](https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md) manually and paste this procedure into the AI conversation. Download the [repo ZIP](https://github.com/robotros/California-IEP-AI-project-kit/archive/refs/heads/main.zip) and upload only the files for the chosen edition plus that project's full `PROJECT_INSTRUCTIONS.md` (not the whole ZIP as a single knowledge document). If the assistant cannot change persistent project settings, it must still walk through setup in the current chat, one file at a time. A refusal to create projects is not the end of setup.
 
 **No Git account, coding, CLI or API key is needed to use publicly visible instruction and knowledge `.md` files.**
 

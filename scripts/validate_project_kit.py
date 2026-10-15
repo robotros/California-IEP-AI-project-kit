@@ -46,6 +46,37 @@ for project in m['projects']:
             errors.append(f'Missing typed redaction contract: {rel}')
 if not (ROOT/'scripts/pii_redact.py').is_file() or not (ROOT/'docs/PRIVACY_AND_REDACTION.md').is_file():
     errors.append('Missing privacy scanner or documentation')
+limit = m.get('file_limits', {}).get('chatgpt_project_instructions_character_limit')
+if limit != 8000:
+    errors.append('ChatGPT instruction character limit must stay 8000')
+for project in m['projects']:
+    summary_rel = project.get('instruction_summary')
+    recorded = project.get('instruction_summary_character_count')
+    if not summary_rel:
+        errors.append(f"Missing instruction summary path: {project['id']}")
+        continue
+    summary_path = ROOT / summary_rel
+    if not summary_path.is_file():
+        errors.append(f'Missing instruction summary file: {summary_rel}')
+        continue
+    summary = summary_path.read_text(encoding='utf-8')
+    count = len(summary)
+    if count != recorded:
+        errors.append(f'Summary character count mismatch for {summary_rel}: file {count}, manifest {recorded}')
+    if count >= 8000:
+        errors.append(f'Summary is not under 8000 characters: {summary_rel} has {count}')
+    for gate in ('[[REDACTED:', 'HUMAN REVIEW REQUIRED', 'pii_redact.py'):
+        if gate not in summary:
+            errors.append(f'Summary missing required gate {gate}: {summary_rel}')
+    if '2.0' in summary:
+        errors.append(f'Summary still contains a 2.0 marker: {summary_rel}')
+setup_text = (ROOT/'AI_SETUP.md').read_text(encoding='utf-8')
+agents_text = (ROOT/'AGENTS.md').read_text(encoding='utf-8')
+for phrase in ('Step 2b', 'do **not** stop', 'Do not claim a project was created', 'INSTRUCTIONS_SUMMARY.md'):
+    if phrase not in setup_text:
+        errors.append(f'AI_SETUP.md missing manual-walkthrough phrase: {phrase}')
+if 'Grok' not in setup_text or 'Grok' not in agents_text:
+    errors.append('Setup docs must name Grok so a capability refusal does not end the walkthrough')
 # Browser-based guided intake form should be present and discoverable.
 form=m.get('intake_form',{})
 for key in ('entrypoint','guide'):

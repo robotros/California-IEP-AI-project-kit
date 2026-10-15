@@ -1,6 +1,6 @@
 # IEP Goal Generator — Standards, Sources, Crosswalk and Safeguards
 
-**Edition:** LIGHTWEIGHT. **Knowledge file 2 of 2.** Use alongside the full Project Instructions text in the Instructions field and the companion lightweight workflow file.
+**Edition:** LIGHTWEIGHT. **Knowledge file 2 of 2.** Use alongside the ChatGPT instruction summary, the uploaded full project instructions, and the companion lightweight workflow file.
 
 ## Source priority and official verification
 

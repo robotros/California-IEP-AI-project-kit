@@ -30,7 +30,7 @@ The form covers **IEP Goal Intake** and **Essential Standards**, shows missing f
 
 `https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md`
 
-> **Copy into your AI chat:** Set up both California Special Education AI projects using the guide at https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Read the files first. Configure whatever your platform actually supports; otherwise guide me through each action one step at a time. Start with fictional test data, never real student records, and verify each configuration before saying it is complete. Then direct me to the educator form and ask me to return its generated Markdown to the matching project when I am ready to use it.
+> **Copy into your AI chat:** Set up both California Special Education AI projects using the guide at https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Read the files first. If you cannot create projects, including Grok, do not stop: walk me through setup in this chat and tell me which file to paste or attach next. Do not claim a project was created. On ChatGPT, paste each instruction summary (under 8000 characters) into Instructions and upload the full project instructions as a file. Start with fictional test data, never real student records, and verify each configuration before saying it is complete. Then direct me to the educator form and ask me to return its generated Markdown to the matching project when I am ready to use it.
 
 The guide creates two **separate configured AI projects or platform equivalents**. It is not a software installer, and no AI service can guarantee automatic setup across every provider. If your assistant cannot open GitHub links, open [AI_SETUP.md](AI_SETUP.md) yourself and paste the instructions, or upload the public Markdown files. Agent-capable tools may also read [AGENTS.md](AGENTS.md) and the [machine-readable project manifest](setup/project-manifest.json).
 
@@ -38,19 +38,19 @@ The guide creates two **separate configured AI projects or platform equivalents*
 
 Give your AI assistant **[`AI_SETUP.md`](AI_SETUP.md)**. It will guide creation of **two projects**. Select one edition per project:
 
-| Edition | Goal Generator attachments | Essential Standards attachments | Free slots left per project |
+| Edition | Goal Generator edition files | Essential Standards edition files | ChatGPT uploads with the full instructions file |
 |---|---:|---:|---:|
-| **Lightweight (recommended for Free)** | 2 | 2 | 3 |
-| **Full (detailed templates and examples)** | 5 | 5 | 0 |
+| **Lightweight (recommended for Free)** | 2 | 2 | 3 (2 Free slots left) |
+| **Full (detailed templates and examples)** | 5 | 5 | 6 (over the Free 5-file cap) |
 
-Copy each project's `PROJECT_INSTRUCTIONS.md` into the platform's dedicated **Project Instructions field**, which avoids consuming an attachment slot. [See exact file lists and limitations](editions/README.md). OpenAI documents Free = 5 project files with a separate daily file upload limit; these may affect whether both projects can be finished in one day. This repo does **not** automatically install into external AI services.
+On ChatGPT, paste each project's instruction summary into **Instructions** (Essential Standards 7484 characters; IEP Goal Generator 6386 characters; both under the 8000-character field limit) and upload the full `PROJECT_INSTRUCTIONS.md` as a knowledge file. [See exact file lists and limitations](editions/README.md). OpenAI documents Free = 5 project files with a separate daily file upload limit; Lightweight plus the instructions file fits, and Full plus that file does not. This repo does **not** automatically install into external AI services.
 
 ## Quick start
 
 1. **Clone/unzip the repository.** No installation or dependencies are required; these are Markdown instructions and templates.
 2. **Select an edition**, using the [guided setup page](AI_SETUP.md) (Lightweight = 2 supporting files per project; Full = 5). **Create two separate AI projects** (or equivalent configured assistants):
-   - Paste [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) into the **IEP Goal Generator** project's instruction area.
-   - Paste [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md) into the **Essential Standards AI** project's instruction area.
+   - ChatGPT: paste [`projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md`](projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md) into the **IEP Goal Generator** Instructions field and upload [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) as a file.
+   - ChatGPT: paste [`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`](projects/essential-standards/INSTRUCTIONS_SUMMARY.md) into the **Essential Standards AI** Instructions field and upload [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md) as a file.
 3. **Configure local rules** using [`templates/shared/local-configuration.md`](templates/shared/local-configuration.md). Keep local configuration and student-specific data in an approved private environment, **outside this public/shared repository**.
 4. **Attach only the knowledge files listed for that edition** in [`AI_SETUP.md`](AI_SETUP.md). The original source guide is also preserved at [`references/authoritative-sources-and-rules.md`](references/authoritative-sources-and-rules.md); recheck official standards and legal sources before use.
 5. **Run the standards workflow** with [`templates/standards/essential-standards-review.md`](templates/standards/essential-standards-review.md), then complete [`templates/standards/standards-to-goal-crosswalk.md`](templates/standards/standards-to-goal-crosswalk.md).
@@ -75,8 +75,10 @@ california-special-education-ai/
 ├── .gitattributes
 ├── projects/
 │   ├── iep-goal-generator/
+│   │   ├── INSTRUCTIONS_SUMMARY.md  # ChatGPT Instructions field, under 8000 characters
 │   │   └── PROJECT_INSTRUCTIONS.md
 │   └── essential-standards/
+│       ├── INSTRUCTIONS_SUMMARY.md  # ChatGPT Instructions field, under 8000 characters
 │       └── PROJECT_INSTRUCTIONS.md
 ├── templates/
 │   ├── iep/

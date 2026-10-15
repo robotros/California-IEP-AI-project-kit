@@ -1,6 +1,6 @@
 # Essential Standards AI — Lightweight Standards Review and Crosswalk
 
-**Edition:** LIGHTWEIGHT. **Knowledge file 1 of 2.** Paste `projects/essential-standards/PROJECT_INSTRUCTIONS.md` into the AI project's **Instructions** field.
+**Edition:** LIGHTWEIGHT. **Knowledge file 1 of 2.** On ChatGPT, paste `projects/essential-standards/INSTRUCTIONS_SUMMARY.md` (under 8000 characters) into **Instructions** and upload the full `projects/essential-standards/PROJECT_INSTRUCTIONS.md` as a knowledge file.
 
 > This AI helps identify and prioritize standards for instructional planning. It is not a source of official approval and does not decide any student's IEP goal or assessment placement.
 

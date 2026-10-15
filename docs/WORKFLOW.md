@@ -14,11 +14,11 @@ Complete [`local-configuration.md`](../templates/shared/local-configuration.md),
 
 ## 2. Configure two independent assistants
 
-For guided installation use [`AI_SETUP.md`](../AI_SETUP.md). Select **Lightweight (2 knowledge files per project)** or **Full (5 per project)** from [`editions/README.md`](../editions/README.md). Use the project instructions in the platform's dedicated Instructions field, and attach only the listed edition files. The detailed unbundled templates referenced below remain the editable canonical source files, but should not all be uploaded to a Free project in addition to its edition files.
+For guided installation use [`AI_SETUP.md`](../AI_SETUP.md). Select **Lightweight (2 knowledge files per project)** or **Full (5 per project)** from [`editions/README.md`](../editions/README.md). On ChatGPT, paste the under-8000-character instruction summary into Instructions and upload the full project instructions as a knowledge file along with the edition files. If the assistant cannot create projects, including Grok, it continues the walkthrough in the current chat and does not stop after saying so. The detailed unbundled templates referenced below remain the editable canonical source files, but should not all be uploaded to a Free project in addition to its edition files.
 
 
-- **Essential Standards AI:** copy [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](../projects/essential-standards/PROJECT_INSTRUCTIONS.md) into the project instructions. Provide the authoritative [source guide](../references/authoritative-sources-and-rules.md) and approved standards documents.
-- **IEP Goal Generator:** copy [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](../projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) into the project instructions. Provide the source guide and approved local configuration.
+- **Essential Standards AI:** paste [`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`](../projects/essential-standards/INSTRUCTIONS_SUMMARY.md) into ChatGPT Instructions (7484 characters) and upload [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](../projects/essential-standards/PROJECT_INSTRUCTIONS.md). Provide the authoritative [source guide](../references/authoritative-sources-and-rules.md) and approved standards documents.
+- **IEP Goal Generator:** paste [`projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md`](../projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md) into ChatGPT Instructions (6386 characters) and upload [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](../projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md). Provide the source guide and approved local configuration.
 
 The handoff is manual unless your institution has approved integration and data protection controls. Do not assume one AI project can access the other project's information.
 

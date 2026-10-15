@@ -8,7 +8,10 @@
     "lightweight_knowledge_files_per_project": 2,
     "full_knowledge_files_per_project": 5,
     "instructions_counted_as_file_only_if_uploaded": true,
-    "note": "Paste project instruction text in dedicated instructions field; do not upload it as knowledge when that field exists. Free upload rate is separately limited and may delay completion."
+    "chatgpt_project_instructions_character_limit": 8000,
+    "chatgpt_setup": "Paste the instruction summary into the Instructions field and upload the full PROJECT_INSTRUCTIONS.md as a knowledge file.",
+    "manual_walkthrough_when_projects_cannot_be_created": "Start the in-chat walkthrough immediately, including for Grok. Do not stop after stating the limitation. Do not claim a project was created.",
+    "note": "ChatGPT Instructions allow 8000 characters. Paste the summary there and upload the full instructions file as knowledge. Lightweight is then 3 files; Full is 6 and exceeds the Free 5-file cap. Free upload rate is separately limited and may delay completion."
   },
   "base_url": "https://github.com/robotros/California-IEP-AI-project-kit",
   "privacy": "Never use identifiable student records during setup; only approved private systems may process permitted education records.",
@@ -17,6 +20,8 @@
       "id": "iep-goal-generator",
       "name": "California IEP Goal Generator",
       "instructions": "projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md",
+      "instruction_summary": "projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md",
+      "instruction_summary_character_count": 6386,
       "editions": {
         "lightweight": {
           "knowledge_files": [
@@ -42,6 +47,8 @@
       "id": "essential-standards",
       "name": "California Essential Standards AI",
       "instructions": "projects/essential-standards/PROJECT_INSTRUCTIONS.md",
+      "instruction_summary": "projects/essential-standards/INSTRUCTIONS_SUMMARY.md",
+      "instruction_summary_character_count": 7484,
       "editions": {
         "lightweight": {
           "knowledge_files": [

@@ -1,6 +1,6 @@
 # Essential Standards AI — Lightweight Source Guide, Rules and Review
 
-**Edition:** LIGHTWEIGHT. **Knowledge file 2 of 2.** Pair with the full project instructions in the Instructions field and the standards-review knowledge file.
+**Edition:** LIGHTWEIGHT. **Knowledge file 2 of 2.** Pair with the ChatGPT instruction summary, the uploaded full project instructions, and the standards-review knowledge file.
 
 ## Primary California sources to consult
 
