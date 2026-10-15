@@ -1,52 +1,112 @@
 {
   "kit": "California Special Education AI Project Kit",
-  "version": "2.0",
+  "version": "2.3.1-form-first-handoff",
   "guide": "AI_SETUP.md",
-  "kind": "ai-project-instructions-and-markdown-templates",
-  "installation_model": "configure-two-independent-ai-projects-or-equivalents",
+  "default_edition": "lightweight",
+  "file_limits": {
+    "chatgpt_free_project_files": 5,
+    "lightweight_knowledge_files_per_project": 2,
+    "full_knowledge_files_per_project": 5,
+    "instructions_counted_as_file_only_if_uploaded": true,
+    "note": "Paste project instruction text in dedicated instructions field; do not upload it as knowledge when that field exists. Free upload rate is separately limited and may delay completion."
+  },
   "base_url": "https://github.com/robotros/California-IEP-AI-project-kit",
-  "student_information_policy": "Use synthetic/de-identified examples for setup; never upload identifiable student records to unapproved services or public repositories.",
+  "privacy": "Never use identifiable student records during setup; only approved private systems may process permitted education records.",
   "projects": [
-    {
-      "id": "essential-standards",
-      "name": "California Essential Standards AI",
-      "instructions": "projects/essential-standards/PROJECT_INSTRUCTIONS.md",
-      "required_supporting_files": [
-        "references/authoritative-sources-and-rules.md",
-        "templates/standards/essential-standards-review.md",
-        "templates/standards/standards-to-goal-crosswalk.md"
-      ],
-      "optional_supporting_files": [
-        "templates/shared/local-configuration.md",
-        "prompts/ready-to-use-prompts.md",
-        "examples/fictional-worked-example.md"
-      ]
-    },
     {
       "id": "iep-goal-generator",
       "name": "California IEP Goal Generator 2.0",
       "instructions": "projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md",
-      "required_supporting_files": [
-        "references/authoritative-sources-and-rules.md",
-        "templates/iep/student-profile-intake.md",
-        "templates/iep/present-levels-baseline.md",
-        "templates/iep/goal-request.md",
-        "templates/iep/goal-output.md",
-        "templates/standards/standards-to-goal-crosswalk.md",
-        "templates/shared/quality-review-and-approval.md"
-      ],
-      "optional_supporting_files": [
-        "templates/shared/local-configuration.md",
-        "prompts/ready-to-use-prompts.md",
-        "examples/fictional-worked-example.md"
-      ]
+      "editions": {
+        "lightweight": {
+          "knowledge_files": [
+            "editions/lightweight/iep-goal-generator/01_GOAL_WORKFLOW_AND_TEMPLATES.md",
+            "editions/lightweight/iep-goal-generator/02_SOURCES_CROSSWALK_AND_SAFETY.md"
+          ],
+          "file_count": 2
+        },
+        "full": {
+          "knowledge_files": [
+            "editions/full/iep-goal-generator/01_STUDENT_CONTEXT_AND_BASELINE.md",
+            "editions/full/iep-goal-generator/02_GOAL_REQUEST_AND_OUTPUT.md",
+            "editions/full/iep-goal-generator/03_STANDARDS_CROSSWALK_AND_SOURCES.md",
+            "editions/full/iep-goal-generator/04_QUALITY_AND_LOCAL_CONFIG.md",
+            "editions/full/iep-goal-generator/05_EXAMPLES_AND_PROMPTS.md"
+          ],
+          "file_count": 5
+        }
+      },
+      "source_modules": "templates/ and references/ contain the unbundled detailed originals"
+    },
+    {
+      "id": "essential-standards",
+      "name": "California Essential Standards AI",
+      "instructions": "projects/essential-standards/PROJECT_INSTRUCTIONS.md",
+      "editions": {
+        "lightweight": {
+          "knowledge_files": [
+            "editions/lightweight/essential-standards/01_STANDARDS_WORKFLOW_AND_TEMPLATES.md",
+            "editions/lightweight/essential-standards/02_SOURCES_RULES_AND_REVIEW.md"
+          ],
+          "file_count": 2
+        },
+        "full": {
+          "knowledge_files": [
+            "editions/full/essential-standards/01_STANDARDS_REVIEW.md",
+            "editions/full/essential-standards/02_STANDARDS_TO_GOAL_CROSSWALK.md",
+            "editions/full/essential-standards/03_OFFICIAL_SOURCES_AND_RULES.md",
+            "editions/full/essential-standards/04_QUALITY_AND_LOCAL_CONFIG.md",
+            "editions/full/essential-standards/05_EXAMPLES_AND_PROMPTS.md"
+          ],
+          "file_count": 5
+        }
+      },
+      "source_modules": "templates/ and references/ contain the unbundled detailed originals"
     }
   ],
   "manual_workflow": "docs/WORKFLOW.md",
-  "verify_setup_with": "AI_SETUP.md#phase-5--validate-each-configuration-with-synthetic-data",
   "limitations": [
-    "Not an executable installer",
-    "Cross-platform automation depends on each AI tool and account permissions",
-    "Educational drafting aid; human verification and authorized IEP review required"
-  ]
+    "No universal automated installer; ability to create project settings depends on assistant/platform authorization",
+    "Education drafting support only; no legal compliance certification or IEP team replacement"
+  ],
+  "pii_redaction": {
+    "local_scanner": "scripts/pii_redact.py",
+    "policy": "docs/PRIVACY_AND_REDACTION.md",
+    "review_template": "templates/shared/pii-redaction-review.md",
+    "automated_scan_is_not_deidentification": true,
+    "ai_output_markers": "[[REDACTED: CATEGORY #NNN]]",
+    "requires_human_review": true,
+    "record_entry_substitution": "authorized system of record only",
+    "included_in_both_editions_without_new_knowledge_uploads": true
+  },
+  "intake_form": {
+    "entrypoint": "docs/index.html",
+    "guide": "docs/FORM_GUIDE.md",
+    "type": "standalone-client-side-html",
+    "optionally_hosted_on_github_pages": "https://robotros.github.io/California-IEP-AI-project-kit/",
+    "requires_pages_owner_enablement": true,
+    "backend": false,
+    "writes_server_data": false,
+    "generates": [
+      "IEP_GOAL_AI_READY_INTAKE.md",
+      "ESSENTIAL_STANDARDS_AI_READY_INTAKE.md",
+      "privacy-review.md"
+    ],
+    "attachment_guidance": "Generated case inputs are conversation-level attachments, not permanent project knowledge files",
+    "automated_redaction_is_not_proof_of_deidentification": true,
+    "setup_handoff_required": true,
+    "introduce_after": "two-project configuration and fictional tests",
+    "request_on_first_task": {
+      "iep-goal-generator": {
+        "output": "IEP_GOAL_AI_READY_INTAKE.md",
+        "target_project": "California IEP Goal Generator 2.0"
+      },
+      "essential-standards": {
+        "output": "ESSENTIAL_STANDARDS_AI_READY_INTAKE.md",
+        "target_project": "California Essential Standards AI"
+      }
+    },
+    "fallback": "Accept already-supplied approved intake or guide conversational intake when form unavailable",
+    "require_real_case_during_setup": false
+  }
 }

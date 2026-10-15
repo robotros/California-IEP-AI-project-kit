@@ -1,100 +1,139 @@
-# Set Up the California Special Education AI Projects with Your AI Assistant
+# AI Setup — Two California Special Education Projects (Free and Full Editions)
 
-**One-link setup guide for ChatGPT, Claude, Gemini, Copilot, and other assistants that can read public GitHub files.**
+> **v2.3.1: Form-first onboarding with v2.2 privacy safeguards:** Both projects now include PII preflight guidance and mandatory typed redaction of AI outputs. Read [the privacy guide](docs/PRIVACY_AND_REDACTION.md) before configuring either assistant. No additional knowledge files are required.
 
-> **For educators:** This is a guided configuration kit, **not an application to deploy**. You do not need to know Git or write code. You need access to an AI platform that supports custom/project instructions or equivalent conversations. Different platforms support different levels of automation. An assistant should not claim to have created a project unless it actually did so and verified the result.
+**Share this page with an AI assistant:** https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md
 
-## Start here — give this link to your AI assistant
+This repo distributes **guided AI project configuration**, not an application or automatic software installer. Educators can use ChatGPT, Claude, Gemini or another platform that supports project instructions and/or knowledge. Any direct automation depends on tool permissions; a guided manual walkthrough always remains possible if the assistant can read these files. **During setup use only fictional information.**
 
-**Share this GitHub page after it is published on the repository's `main` branch:**
+## Copy/paste this prompt into your AI chat
 
-https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md
+> Please read this guide and set up the two California Special Education AI projects: https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Start by recommending the **Lightweight edition** for a Free account; explain the Full edition as an option. Read the exact Project Instructions and knowledge-file paths from the manifest. Determine which settings you can actually change, then either configure them with permission or walk me through one step at a time. Don't request real student data. Check both configurations with fictional test prompts, and clearly state which steps were completed versus still need my action. Then introduce the educator intake form and prompt me to paste or attach its generated Markdown in the matching project when I am ready for a task.
 
-Copy and paste the following message into your AI assistant along with the link:
+## Required onboarding handoff — introduce the educator form
 
-> Help me set up both California Special Education AI projects from this public GitHub setup guide: https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Read the guide and the project instruction files before proceeding. First determine what setup you can actually perform in my AI platform. Create/configure both projects if supported and authorized; otherwise walk me through setup **one step at a time**, including exactly which files to copy or attach. Use only fictional examples for testing. Do not ask for any student-identifiable information. At the end, verify each project's instructions and knowledge files and provide a completion checklist.
+Educators do **not** have to type directly into the Markdown template files. Use the offline-capable browser form at [`docs/index.html`](docs/index.html), following [`docs/FORM_GUIDE.md`](docs/FORM_GUIDE.md). After the repository owner enables GitHub Pages from the `docs/` folder, the optional public form link will be `https://robotros.github.io/California-IEP-AI-project-kit/` (not live until configured). The form generates a **single combined Markdown attachment for the current AI chat** or an archive of the corresponding templates; it does **not** consume additional permanent Project Knowledge slots. It does not send answers to a server, but automatic PII detection cannot assure anonymity or district authorization. After the two projects are configured and fictional tests pass, **always explain and offer the form as the default method for submitting the first real task**. Do not ask for the generated intake during configuration testing. Do not pretend a Pages site has been published until it is verified.
 
-**If your AI cannot open GitHub links:** Open this page yourself and copy the **AI setup procedure** below into the chat. Download the repository as a ZIP (GitHub **Code → Download ZIP**) and upload only the relevant public Markdown files if supported. Some assistants cannot browse external URLs, manage project settings, or save configurations; in those cases follow their guided manual setup instructions.
+## Step 1 — Choose a profile, not an AI plan assumption
 
-## AI setup procedure (instructions to the assisting AI)
+| Edition | Uploaded knowledge files per project | Remaining ChatGPT Free project slots | Best for |
+|---|---:|---:|---|
+| **Lightweight (default)** | **2** | 3 | Fast educator setup, future project documents |
+| **Full** | **5** | 0 | Detailed original templates and examples |
 
-When an educator supplies the link above or asks to "install/setup the two projects," act as a **configuration guide**, not an IEP case manager. Read this document and the actual linked project instruction files. Do not infer their contents from filenames or a summary. Do not ask for identifiable student data. Complete the process in this order:
+Both editions use the **same core Project Instructions**, pasted into the dedicated project instructions field. See [edition comparison](editions/README.md).
 
-### Phase 1 — Verify access and platform capability
+**Verified ChatGPT limits (reviewed October 2026):** Free up to 5 project files; Go/Plus up to 25; Pro/Edu/Business/Enterprise up to 40. There is also a separately published Free rate limit of 3 uploaded files/day, so installing both lightweight projects (4 total uploads) could require more than one day. Project file availability varies across non-ChatGPT platforms. Sources: [OpenAI Projects Help](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt), [OpenAI uploads Help](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt).
 
-1. Read the repository's [README.md](README.md) and the [project manifest](setup/project-manifest.json). Confirm that the linked instruction and reference files exist. Use raw-file URLs below if the platform does not render GitHub pages correctly.
-2. Identify the user's AI platform **only if it is not already clear**. Ask one simple question: **"Which AI tool are you using (for example, ChatGPT, Claude, Gemini, or Microsoft Copilot)?"**
-3. Determine actual capabilities: Can you read external links? Can you create projects or custom assistants, edit their instructions, and attach knowledge files? Can these settings persist? Do you have permission to perform these actions?
-4. State your capability accurately in one sentence. Use one of: `I can configure the projects directly`, `I can configure some elements; you will complete others`, or `I can guide manual setup only`. Do not claim persistent setup was successful without verification.
-5. Do **not** require a GitHub account, programming, installation of Python, or access to any repository secrets. The public source files are enough.
+## Step 2 — How the AI assistant must operate
 
-### Phase 2 — Create two separate projects or equivalents
+1. Read **this file** and [`setup/project-manifest.json`](setup/project-manifest.json), then the referenced two project instruction files. Do not infer contents from file names.
+2. If the user's platform is unknown, ask: "Which AI tool are you using?" Prefer **lightweight** unless they choose full. Ask only what is genuinely necessary.
+3. Explain capability honestly: Can you create/configure persistent projects, edit their instructions, attach files, and verify results? Do not claim account-level actions that were not performed.
+4. If capable **and authorized**, create two persistent, separately named projects. If not, guide step by step. If platform has no project support, offer two separate persistent configured assistants or independent chats, stating any lack of persistence.
+5. **Paste exact content** of each `PROJECT_INSTRUCTIONS.md` into its corresponding **Project Instructions** configuration. This is not a file upload where the platform provides a separate instruction field.
+6. Attach only the selected edition's `knowledge_files` for each project, as listed in the manifest. For ChatGPT Free, do not exceed five uploaded files per project. Do not upload the instruction text again as a knowledge file unless intentionally accepting that it consumes a file slot.
+7. Explain how one project hands off verified standards in the crosswalk to the other. The assistants do not automatically share chats, data or knowledge.
+8. Run the fictional configuration tests below. Report what was *actually verified* and what still needs user action.
+9. **Complete the form handoff.** After successful setup, show the appropriate form location, offer to guide the educator through it, and tell them exactly which named `.md` output to paste/attach to which project. Do not request real student data in the setup chat.
 
-Use these exact project names. If the user's platform lacks named projects, offer two **independent, persistent configured assistants or workspaces**, if the platform supports them; otherwise use two separate conversations with copied instructions, and clearly explain that instructions may not persist.
+## Step 3 — Exact project instructions and file paths
 
-| Project | Copy into its **instructions** area | Add public knowledge/reference files |
-|---|---|---|
-| **California Essential Standards AI** | [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md) | [`references/authoritative-sources-and-rules.md`](references/authoritative-sources-and-rules.md), [`templates/standards/essential-standards-review.md`](templates/standards/essential-standards-review.md), [`templates/standards/standards-to-goal-crosswalk.md`](templates/standards/standards-to-goal-crosswalk.md) |
-| **California IEP Goal Generator 2.0** | [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) | [`references/authoritative-sources-and-rules.md`](references/authoritative-sources-and-rules.md), all four files under [`templates/iep/`](templates/iep/), [`templates/standards/standards-to-goal-crosswalk.md`](templates/standards/standards-to-goal-crosswalk.md), [`templates/shared/quality-review-and-approval.md`](templates/shared/quality-review-and-approval.md) |
+### Project A — California Essential Standards AI
 
-**Important distinction:** The full contents of each `PROJECT_INSTRUCTIONS.md` file belong in the project's **instruction/system behavior** configuration, *not merely as an uploaded knowledge file* if separate instruction and knowledge features are available. Knowledge files are supporting material; merely uploading files may not make an assistant follow instructions persistently.
+**Project instructions (paste as text):** [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md).
 
-If upload limits apply, prioritize the two instruction documents in their respective instruction fields, then the source guide, then the output/intake templates. [`templates/shared/local-configuration.md`](templates/shared/local-configuration.md) is a **blank template** for locally approved procedures, not permission to invent those procedures. Only approved local policy documents may be supplied, privately. [`prompts/ready-to-use-prompts.md`](prompts/ready-to-use-prompts.md) and [`examples/fictional-worked-example.md`](examples/fictional-worked-example.md) are optional supporting examples for either project.
+**Lightweight knowledge files — upload both (2/5):**
 
-### Phase 3 — Enforce privacy and sourcing
+1. [`editions/lightweight/essential-standards/01_STANDARDS_WORKFLOW_AND_TEMPLATES.md`](editions/lightweight/essential-standards/01_STANDARDS_WORKFLOW_AND_TEMPLATES.md)
+2. [`editions/lightweight/essential-standards/02_SOURCES_RULES_AND_REVIEW.md`](editions/lightweight/essential-standards/02_SOURCES_RULES_AND_REVIEW.md)
 
-Before asking for IEP inputs, explain:
+**Full knowledge files — upload all five (5/5):**
 
-- **Use fictional or properly de-identified examples for setup/testing.** Real student records are not needed to create the projects. Do not solicit names, birthdates, student numbers, or complete IEP files.
-- **Do not upload student-identifiable material** to an unapproved AI vendor, public repository, or shared conversation. An organization's own policies and agreements govern approved use; this guide does not certify FERPA compliance.
-- Treat all outputs as **drafts requiring educator/IEP-team review**. Neither project can declare legal compliance, eligibility, assessment pathway, services, or placement.
-- Verify grade-level standards, exact codes, source wording, source URLs, and currency using official California materials before declaring them verified. If source access is unavailable, mark claims `UNVERIFIED`.
-- Distinguish **California state-adopted standards**, **local essential/priority standards**, **Core Content Connectors**, and **Essential Understandings**. They are not interchangeable.
-- Do not manufacture student baseline data, performance measurements, standard codes, or progress histories. State missing fields explicitly.
+1. [`editions/full/essential-standards/01_STANDARDS_REVIEW.md`](editions/full/essential-standards/01_STANDARDS_REVIEW.md)
+2. [`editions/full/essential-standards/02_STANDARDS_TO_GOAL_CROSSWALK.md`](editions/full/essential-standards/02_STANDARDS_TO_GOAL_CROSSWALK.md)
+3. [`editions/full/essential-standards/03_OFFICIAL_SOURCES_AND_RULES.md`](editions/full/essential-standards/03_OFFICIAL_SOURCES_AND_RULES.md)
+4. [`editions/full/essential-standards/04_QUALITY_AND_LOCAL_CONFIG.md`](editions/full/essential-standards/04_QUALITY_AND_LOCAL_CONFIG.md)
+5. [`editions/full/essential-standards/05_EXAMPLES_AND_PROMPTS.md`](editions/full/essential-standards/05_EXAMPLES_AND_PROMPTS.md)
 
-### Phase 4 — Configure the workflow between projects
+### Project B — California IEP Goal Generator 2.0
 
-The **Essential Standards AI** runs first for standards identification, local-priority consideration, unpacking, and source verification. Its output is placed into [`templates/standards/standards-to-goal-crosswalk.md`](templates/standards/standards-to-goal-crosswalk.md). A person transfers the verified crosswalk to the **IEP Goal Generator 2.0**, which uses actual approved, de-identified present levels/baselines to draft goals. **Do not assume the two AI projects share files, chats, memory, or integrations.** Only automate a handoff if the platform supports it and the user's organization has authorized the data flow.
+**Project instructions (paste as text):** [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md).
 
-### Phase 5 — Validate each configuration with synthetic data
+**Lightweight knowledge files — upload both (2/5):**
 
-Do not begin a live student case. Run **one small test per project** (or give the educator copy-ready test prompts if you cannot run them):
+1. [`editions/lightweight/iep-goal-generator/01_GOAL_WORKFLOW_AND_TEMPLATES.md`](editions/lightweight/iep-goal-generator/01_GOAL_WORKFLOW_AND_TEMPLATES.md)
+2. [`editions/lightweight/iep-goal-generator/02_SOURCES_CROSSWALK_AND_SAFETY.md`](editions/lightweight/iep-goal-generator/02_SOURCES_CROSSWALK_AND_SAFETY.md)
 
-**Essential Standards AI — safe test prompt:**
+**Full knowledge files — upload all five (5/5):**
 
-> Using only official California sources you can actually access, find one California grade 3 mathematics standard relevant to multiplication and label its code, grade, official source link and verification status. Explain the difference between the official standard and a proposed locally prioritized essential standard. If you cannot verify a code, do not invent one.
+1. [`editions/full/iep-goal-generator/01_STUDENT_CONTEXT_AND_BASELINE.md`](editions/full/iep-goal-generator/01_STUDENT_CONTEXT_AND_BASELINE.md)
+2. [`editions/full/iep-goal-generator/02_GOAL_REQUEST_AND_OUTPUT.md`](editions/full/iep-goal-generator/02_GOAL_REQUEST_AND_OUTPUT.md)
+3. [`editions/full/iep-goal-generator/03_STANDARDS_CROSSWALK_AND_SOURCES.md`](editions/full/iep-goal-generator/03_STANDARDS_CROSSWALK_AND_SOURCES.md)
+4. [`editions/full/iep-goal-generator/04_QUALITY_AND_LOCAL_CONFIG.md`](editions/full/iep-goal-generator/04_QUALITY_AND_LOCAL_CONFIG.md)
+5. [`editions/full/iep-goal-generator/05_EXAMPLES_AND_PROMPTS.md`](editions/full/iep-goal-generator/05_EXAMPLES_AND_PROMPTS.md)
 
-**IEP Goal Generator 2.0 — safe test prompt:**
+**IMPORTANT:** The original `templates/`, `prompts/`, `examples/`, and `references/` remain available for source-level maintenance. Do not upload them **in addition** to the selected edition if doing so exceeds the user's account limit.
 
-> Use a **fictional** grade 3 student who is working on multiplication facts. No observed baseline data is supplied. Show which baseline details are missing, do not invent scores or accuracy, and either ask for essential missing information or draft an explicitly **INCOMPLETE** goal template. Do not assert that the goal is ready for IEP adoption.
+## Step 4 — Privacy and source verification
 
-Confirm that the standards assistant distinguishes official vs. proposed priority designations and that the IEP assistant does not fabricate a baseline or label an incomplete goal ready for team review. If the test fails, review the instruction placement and revise the project configuration; do not silently claim success.
+- Never request student names, DOB, school IDs or full IEPs during configuration. Use fictional or properly de-identified examples only. Do not upload education records to unapproved AI services or public repositories. Local LEA/district policy and contracts control approved workflows; this kit does **not** certify FERPA compliance.
+- Grade-level standards require **actual official source verification** (grade, code, content, URL/date). Local essential recommendations must be labeled proposed unless a documented approved list supports them. Alternate assessment Core Content Connectors and Essential Understandings are distinct from local essential standards.
+- Proposed annual goals need real repeatable baseline data, observable behavior, evidence-based target, measurement and reporting approach. Unknown fields stay unknown; no invented scores, standard codes, team decisions or local rules.
+- Educators and the authorized IEP team approve IEP goals; the AI does not determine eligibility, services, placement, alternate assessment pathway or legal compliance.
 
-### Phase 6 — Present completion status
+## Step 5 — Fictional tests before real use
 
-Provide the educator a **two-project setup checklist** with status for each item: `Verified configured`, `User action needed`, `Not supported by this platform`, or `Not yet verified`.
+**Standards project:**
 
-Checklist items: correct project names; correct project instruction text; source guide attached/reachable; appropriate templates attached/reachable; privacy notice understood; synthetic test results; crosswalk handoff explained. Never mark anything `Verified configured` solely because it was recommended in this document.
+> For a fictional grade 3 mathematics multiplication unit, verify one current official California standard you can actually access. Provide grade, code, source and checked date; then propose a locally prioritized essential designation **without claiming district adoption**. If you cannot verify, say `UNVERIFIED` and do not invent a code.
 
-If user action is needed, provide **only the next concrete step** (for example, "Open your AI platform's project creation screen and tell me when it's open"). Do not invent button names or account-specific UI. Advance after the user confirms the step. Avoid long questionnaires or requesting permissions that are not needed.
+**IEP goal project:**
 
-## Direct raw URLs for AI assistants that prefer plain text
+> A fictional grade 3 learner is working on multiplication facts, but **no baseline observations have been provided**. Show the missing measurements and permitted task/support conditions needed. Produce only a clearly labeled **PROVISIONAL** goal framework; do not invent observed scores, mastery criteria or announce readiness for IEP adoption.
 
-- Manifest: https://raw.githubusercontent.com/robotros/California-IEP-AI-project-kit/main/setup/project-manifest.json
-- Standards project instructions: https://raw.githubusercontent.com/robotros/California-IEP-AI-project-kit/main/projects/essential-standards/PROJECT_INSTRUCTIONS.md
-- IEP goal project instructions: https://raw.githubusercontent.com/robotros/California-IEP-AI-project-kit/main/projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md
-- Source guide: https://raw.githubusercontent.com/robotros/California-IEP-AI-project-kit/main/references/authoritative-sources-and-rules.md
-- Manual workflow: https://raw.githubusercontent.com/robotros/California-IEP-AI-project-kit/main/docs/WORKFLOW.md
+A passing setup check verifies that the assistant can retrieve/use instructions, distinguish official vs proposed standards and refuse invented baselines. It **does not** certify school policy approval or legal compliance.
 
-If a requested URL does not exist or cannot be fetched, **say so**; do not imply that you installed any project. Refer back to the GitHub repository file browser and ask the educator to provide the missing file.
+## Step 6 — First-use educator form handoff (required during onboarding)
 
-## Human-only quick setup (no AI control of account settings needed)
+After fictional setup tests, **do not stop at “configuration complete.”** Give the educator the next action for obtaining an intake document. The assistant must **introduce the form automatically** even if the educator has never mentioned Markdown, and it must explain the return step. The educator is not required to fill forms during initial configuration.
 
-1. Open your AI platform and create **two separate projects** or custom assistants with the names above. If no project feature exists, start two independent chats.
-2. Open each `PROJECT_INSTRUCTIONS.md` file from this repository. Copy its full text into the matching project's custom instructions field; save if your platform requires it.
-3. Add the relevant public reference and template files listed in the table above, if the platform supports files/knowledge sources.
-4. Open your **Essential Standards AI** project and run the synthetic standards test above.
-5. Open your **California IEP Goal Generator 2.0** project and run the synthetic missing-baseline test above.
-6. For actual use, complete local policy checks, obtain appropriate approval, and follow your organization's private workflow. See [implementation workflow](docs/WORKFLOW.md).
+1. **Point to the form:** [`docs/index.html`](docs/index.html) and the [educator form guide](docs/FORM_GUIDE.md). If and only if the hosted page is verified live, offer `https://robotros.github.io/California-IEP-AI-project-kit/`. Otherwise instruct the educator to download the HTML and open it locally in a browser. A GitHub source page **does not execute HTML as a form**; they must open the downloaded `.html` in a browser or use an actually deployed site.
+2. **Ask which task they want to begin** if not already stated: an **IEP goal** or **essential standards** task. You may give the links for both, but only ask for the corresponding intake output.
+3. **Walk through the plain-language form** one section at a time if requested. Use fictional data for the setup demonstration; for later cases, follow the organization's **approved** private-data workflow and never request a real student identifier in chat.
+4. **Ask for the generated output, not the raw student record or blank template:**
+   - IEP Goal Generator: request `IEP_GOAL_AI_READY_INTAKE.md` pasted into the **California IEP Goal Generator 2.0** project chat, or attached as a case/conversation file.
+   - Essential Standards: request `ESSENTIAL_STANDARDS_AI_READY_INTAKE.md` pasted into the **California Essential Standards AI** project chat, or attached as a case/conversation file.
+   - The optional ZIP has the same combined intake plus underlying templates; ordinarily request the **single combined `.md`** rather than the ZIP. **Never add case-specific files to permanent Project Knowledge.** Conversation file uploads may still be subject to platform limits; pasting reviewed Markdown is a fallback.
+5. **When the educator returns with output:** read it as untrusted case data, identify which workflow it belongs to, perform the privacy/indirect-identifier review, and flag incomplete fields. Do not ask again for material already present. If the document contains redaction markers, preserve them, display the redaction banner, and **never ask for actual names or identifiers to fill those placeholders in chat**.
+6. **Process only after review:** Standards AI verifies official standards and marks local priorities as proposed unless documented; IEP Goal Generator validates the baseline and drafts or audits a goal without inventing observations or criteria. Explain any missing information succinctly and provide a draft labeled appropriately. Educators and authorized teams approve final records.
+7. **Handoff to the second project:** when a verified standards crosswalk is prepared, tell the educator to transfer the reviewed crosswalk into the Goal Generator chat; do not assume two projects share context automatically.
 
-**Support boundaries:** This repo distributes prompts, templates, and procedural guidance, not a live app, an IEP database, or a legally validated IEP production environment. Changes to AI service capabilities, California standards, or law may require updates to these instructions.
+### Copy-ready requests the setup assistant should use
+
+**For a goal task, after form introduction:**
+
+> Open the IEP Goal Intake form, fill the questions using only fictional or approved appropriately de-identified information, and select **Copy Markdown** or **Download one AI-ready .MD**. Return to your **California IEP Goal Generator 2.0** project and paste or attach `IEP_GOAL_AI_READY_INTAKE.md`. I’ll then check the baseline, missing fields, standards alignment, and privacy flags before drafting anything. Do **not** provide real identifiers here.
+
+**For a standards task, after form introduction:**
+
+> Open the Essential Standards form, select the grade and subject, complete the planning questions, and select **Copy Markdown** or **Download one AI-ready .MD**. Return to **California Essential Standards AI** and paste or attach `ESSENTIAL_STANDARDS_AI_READY_INTAKE.md`. I’ll verify the standards and label any locally proposed priorities separately. Do **not** provide student identifiers here.
+
+**Already have the generated intake?** Accept it directly and skip the form walkthrough. **Cannot use the form?** Accept answers conversationally and create the same intake structure; do not force an inaccessible workflow. **No safe/approved data channel?** Work only with fictional examples.
+
+## Step 7 — Report setup completion accurately
+
+Report for each project: name; selected edition; instructions installed vs copied for user action; list and count of attached files; remaining file slots if known; standards-source verification behavior; fictional-test result; outstanding manual steps. Mark each item **Verified configured / User action needed / Not supported / Unverified**. Do not mark actions complete until the tool/platform confirms them.
+
+### Platforms that can't fetch GitHub URLs
+
+Open this [setup page](https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md) manually and paste this procedure into the AI conversation. Download the [repo ZIP](https://github.com/robotros/California-IEP-AI-project-kit/archive/refs/heads/main.zip) and upload only the files for the chosen edition (not the whole ZIP as a single knowledge document). If the assistant cannot change persistent project settings, it can still guide you with copy/paste instructions.
+
+**No Git account, coding, CLI or API key is needed to use publicly visible instruction and knowledge `.md` files.**
+
+
+## Mandatory privacy setup gate — v2.2
+
+**Every AI setup must activate this behavior in both projects, both editions:** read [`docs/PRIVACY_AND_REDACTION.md`](docs/PRIVACY_AND_REDACTION.md) and confirm its rules are present in the two project instruction texts. Do **not** add this privacy file as a sixth upload in Full, or a third upload in Lightweight; the relevant rules are already embedded in the instruction text and edition files.
+
+Before asking for documents, explain how an approved local operator can run [`scripts/pii_redact.py`](scripts/pii_redact.py). Chat-based redaction cannot protect material already uploaded to an AI vendor. Require human manual screening of indirect/combined identifiers and of PDF/DOCX scans or metadata. In all AI outputs substitute identifiers with `[[REDACTED: CATEGORY #NNN]]`, show **⚠️ PII REDACTED — HUMAN REVIEW REQUIRED** whenever a marker is used, and list tokens (not raw values) to replace **only within the authorized IEP system of record**. Run a synthetic privacy test as part of validation; do not mark a project fully configured if the AI echoes original synthetic names/IDs.

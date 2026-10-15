@@ -53,3 +53,15 @@
 - **Documentation of team consideration:** [outside AI platform; location/reference]
 - **Final IEP adoption/approval:** [leave UNADOPTED unless a responsible human confirms the formal decision]
 - **Reviewer notes:** [ ]
+
+
+## Privacy QA (v2.2)
+
+- [ ] Offline pre-upload scan and authorized manual review completed for student-specific materials
+- [ ] Direct identifiers and combined/indirect re-identification risks evaluated
+- [ ] Generated reply and every attachment use typed `[[REDACTED: CATEGORY #NNN]]` markers, not original values
+- [ ] PII REDACTED banner and substitution list appear whenever a marker is used
+- [ ] Authorized staff perform replacements **only in the system of record**, never by reposting identifiers to chat
+- [ ] No claim of automatic FERPA/California compliance or fully complete de-identification
+
+See [privacy policy](../../docs/PRIVACY_AND_REDACTION.md) and [private review checklist](pii-redaction-review.md).

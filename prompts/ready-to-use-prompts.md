@@ -4,11 +4,11 @@ These prompts assume you supplied the relevant blank/completed Markdown template
 
 ## Prompt 1 — Build essential standards for a grade
 
-> Act under the California Essential Standards AI project instructions. For grade [GRADE], subject [SUBJECT], and instructional period [PERIOD], verify current California adopted standards from authoritative CDE sources. Recommend a limited set of locally *proposed*, not state-designated, essential/priority standards using the project rubric. Provide exact codes, grade, concise accurate expectation, source URL, checked date, prioritized rationale, unpacked knowledge/skills, and any uncertain items. Complete the `07_ESSENTIAL_STANDARDS_REVIEW.md` structure. If the official catalog cannot be checked, flag all unverified codes and request the source document rather than inventing them.
+> Act under the California Essential Standards AI project instructions. For grade [GRADE], subject [SUBJECT], and instructional period [PERIOD], verify current California adopted standards from authoritative CDE sources. Recommend a limited set of locally *proposed*, not state-designated, essential/priority standards using the project rubric. Provide exact codes, grade, concise accurate expectation, source URL, checked date, prioritized rationale, unpacked knowledge/skills, and any uncertain items. Complete the `templates/standards/essential-standards-review.md` structure. If the official catalog cannot be checked, flag all unverified codes and request the source document rather than inventing them.
 
 ## Prompt 2 — Produce the standards-to-goal handoff
 
-> For the verified enrolled-grade standard [CODE, GRADE, SOURCE], prepare `08_STANDARDS_GOAL_CROSSWALK.md`. Distinguish the official standard from your inferred prerequisite/enabling skills. Suggest accessible learning tasks and measurable evidence types, but do not invent an individual student's baseline or IEP target. If this is an IEP-team-determined alternate assessment pathway, include the applicable verified CCC/EU or science connector and show the grade-level connection.
+> For the verified enrolled-grade standard [CODE, GRADE, SOURCE], prepare `templates/standards/standards-to-goal-crosswalk.md`. Distinguish the official standard from your inferred prerequisite/enabling skills. Suggest accessible learning tasks and measurable evidence types, but do not invent an individual student's baseline or IEP target. If this is an IEP-team-determined alternate assessment pathway, include the applicable verified CCC/EU or science connector and show the grade-level connection.
 
 ## Prompt 3 — Draft a measurable annual goal
 

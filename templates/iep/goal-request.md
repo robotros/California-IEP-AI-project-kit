@@ -1,6 +1,6 @@
 # TEMPLATE — IEP Goal Draft / Revision Request
 
-Copy into **California IEP Goal Generator 2.0** after supplying `03_STUDENT_PROFILE_INTAKE_TEMPLATE.md` and `04_PRESENT_LEVELS_BASELINE_TEMPLATE.md`.
+Copy into **California IEP Goal Generator 2.0** after supplying `templates/iep/student-profile-intake.md` and `templates/iep/present-levels-baseline.md`.
 
 ## Task
 

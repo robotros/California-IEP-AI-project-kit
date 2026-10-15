@@ -70,3 +70,7 @@
 - `LOCAL PROPOSED`: project-based prioritization, awaiting local approval.
 - `UNVERIFIED`: insufficient official source; do not claim exact code/wording/authority.
 - `INSTRUCTIONAL INTERPRETATION`: examples, task analysis, prerequisites, or priority reasons produced by educators/AI; not official standard language.
+
+
+## v2.2 PII safety feature
+See [`docs/PRIVACY_AND_REDACTION.md`](../docs/PRIVACY_AND_REDACTION.md) for federal/California definitions, pre-upload local screening limits, mandatory typed redactions in AI responses, and substitution exclusively inside the authorized IEP system of record. The presence of a redacted file **never** establishes that a file is truly de-identified.

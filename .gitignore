@@ -36,3 +36,10 @@ tmp/
 
 # Note: .gitignore does NOT protect secrets or student records already committed.
 # Store identifiable data only in a separately approved, access-controlled system.
+
+# PII preflight temporary/private outputs (never commit)
+pii_review_report.json
+known-names.txt
+redacted_*.txt
+pii-private-output/
+pii-input/

@@ -49,4 +49,4 @@
 - **Who will review the draft?** [role, not name]
 - **Missing evidence requiring collection before team review:** [ ]
 
-> Do not fill unknown fields with plausible details. Upload `04_PRESENT_LEVELS_BASELINE_TEMPLATE.md` for each proposed goal area.
+> Do not fill unknown fields with plausible details. Upload `templates/iep/present-levels-baseline.md` for each proposed goal area.

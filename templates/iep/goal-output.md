@@ -1,6 +1,7 @@
 # TEMPLATE — IEP Goal Draft & Progress-Monitoring Plan
 
 **DRAFT — HUMAN IEP TEAM REVIEW REQUIRED**  
+**PRIVACY FLAG:** If any identifiable value is present, replace with `[[REDACTED: CATEGORY #NNN]]`; display **⚠️ PII REDACTED — HUMAN REVIEW REQUIRED** and a typed marker list. Substitute actual values **only in the authorized system of record**. A zero-detection result is not proof of de-identification.  
 **Project:** California IEP Goal Generator 2.0  
 **Prepared on:** [date]  
 **De-identified student alias / enrolled grade:** [ ]  

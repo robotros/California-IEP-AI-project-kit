@@ -8,7 +8,19 @@
 > [!IMPORTANT]
 > **Educational drafting aid only.** This repository is not an IEP system of record, legal advice, a compliance certification, or a replacement for the IEP team. AI output must be reviewed by qualified staff against current law, official standards, and district/SELPA policies before use. Never upload identifiable student records to an unapproved AI service or a public Git repository.
 
-**Version:** 2.0 · **Source notes last researched:** 2026-10-14 · **Audience:** California educators, case managers, related-service providers, curriculum teams and reviewers.
+**Instruction content version:** 2.0 · **Setup editions:** 2.1 · **Source notes last researched:** 2026-10-14 · **Audience:** California educators, case managers, related-service providers, curriculum teams and reviewers.
+
+## Educator-friendly form — no Markdown editing
+
+**Updated in v2.3.1:** Fill out a private, browser-based guided form instead of manually editing `.md` templates:
+
+- **[Open the offline-capable form source](docs/index.html)** — save the HTML file and open it in a browser.
+- **[Read the short form guide](docs/FORM_GUIDE.md)** — includes offline use and optional GitHub Pages hosting.
+- **Future hosted form URL (only after GitHub Pages is enabled):** `https://robotros.github.io/California-IEP-AI-project-kit/`
+
+After the AI has configured and tested both projects, **it should automatically introduce the form and ask for its generated `.md` output when an educator starts a task**. Goal tasks return `IEP_GOAL_AI_READY_INTAKE.md` to Goal Generator; standards tasks return `ESSENTIAL_STANDARDS_AI_READY_INTAKE.md` to Essential Standards AI. **Do not send real identifiers into an unapproved AI conversation.**
+
+The form covers **IEP Goal Intake** and **Essential Standards**, shows missing fields and PII review flags, then lets educators copy Markdown into chat, download one combined AI-ready Markdown file, or download individual templates as a ZIP. There is **no backend or data upload by the form itself**. Use fictional inputs for setup; real student information requires district-approved controls. Attach generated `.md` to a **conversation**, not permanent project knowledge, so both **Lightweight (2 files)** and **Full (5 files)** bundles remain unchanged.
 
 ## Set up with your AI assistant — one shareable link
 
@@ -18,18 +30,29 @@
 
 `https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md`
 
-> **Copy into your AI chat:** Set up both California Special Education AI projects using the guide at https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Read the files first. Configure whatever your platform actually supports; otherwise guide me through each action one step at a time. Start with fictional test data, never real student records, and verify each configuration before saying it is complete.
+> **Copy into your AI chat:** Set up both California Special Education AI projects using the guide at https://github.com/robotros/California-IEP-AI-project-kit/blob/main/AI_SETUP.md. Read the files first. Configure whatever your platform actually supports; otherwise guide me through each action one step at a time. Start with fictional test data, never real student records, and verify each configuration before saying it is complete. Then direct me to the educator form and ask me to return its generated Markdown to the matching project when I am ready to use it.
 
 The guide creates two **separate configured AI projects or platform equivalents**. It is not a software installer, and no AI service can guarantee automatic setup across every provider. If your assistant cannot open GitHub links, open [AI_SETUP.md](AI_SETUP.md) yourself and paste the instructions, or upload the public Markdown files. Agent-capable tools may also read [AGENTS.md](AGENTS.md) and the [machine-readable project manifest](setup/project-manifest.json).
+
+## One-link AI setup — choose Lightweight or Full
+
+Give your AI assistant **[`AI_SETUP.md`](AI_SETUP.md)**. It will guide creation of **two projects**. Select one edition per project:
+
+| Edition | Goal Generator attachments | Essential Standards attachments | Free slots left per project |
+|---|---:|---:|---:|
+| **Lightweight (recommended for Free)** | 2 | 2 | 3 |
+| **Full (detailed templates and examples)** | 5 | 5 | 0 |
+
+Copy each project's `PROJECT_INSTRUCTIONS.md` into the platform's dedicated **Project Instructions field**, which avoids consuming an attachment slot. [See exact file lists and limitations](editions/README.md). OpenAI documents Free = 5 project files with a separate daily file upload limit; these may affect whether both projects can be finished in one day. This repo does **not** automatically install into external AI services.
 
 ## Quick start
 
 1. **Clone/unzip the repository.** No installation or dependencies are required; these are Markdown instructions and templates.
-2. **Create two separate AI projects** (or equivalent configured assistants):
+2. **Select an edition**, using the [guided setup page](AI_SETUP.md) (Lightweight = 2 supporting files per project; Full = 5). **Create two separate AI projects** (or equivalent configured assistants):
    - Paste [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) into the **IEP Goal Generator 2.0** project's instruction area.
    - Paste [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md) into the **Essential Standards AI** project's instruction area.
 3. **Configure local rules** using [`templates/shared/local-configuration.md`](templates/shared/local-configuration.md). Keep local configuration and student-specific data in an approved private environment, **outside this public/shared repository**.
-4. **Give each project its source guide:** [`references/authoritative-sources-and-rules.md`](references/authoritative-sources-and-rules.md). Recheck official sources when using or revising standards and goals.
+4. **Attach only the knowledge files listed for that edition** in [`AI_SETUP.md`](AI_SETUP.md). The original source guide is also preserved at [`references/authoritative-sources-and-rules.md`](references/authoritative-sources-and-rules.md); recheck official standards and legal sources before use.
 5. **Run the standards workflow** with [`templates/standards/essential-standards-review.md`](templates/standards/essential-standards-review.md), then complete [`templates/standards/standards-to-goal-crosswalk.md`](templates/standards/standards-to-goal-crosswalk.md).
 6. **Run the IEP goal workflow** using the student intake, baseline and goal-request templates. Use the goal-output template, then complete the human quality review.
 
@@ -43,7 +66,11 @@ california-special-education-ai/
 ├── AI_SETUP.md                 # Shareable setup link and guided AI procedure
 ├── AGENTS.md                   # Entry point for repository-aware AI agents
 ├── setup/
-│   └── project-manifest.json   # File map for automated or manual setup
+│   └── project-manifest.json   # Edition-aware file map
+├── editions/
+│   ├── README.md                 # File counts and comparison
+│   ├── lightweight/             # 2 knowledge files per project
+│   └── full/                    # 5 knowledge files per project
 ├── .gitignore
 ├── .gitattributes
 ├── projects/
@@ -70,6 +97,8 @@ california-special-education-ai/
 ├── examples/
 │   └── fictional-worked-example.md
 └── docs/
+    ├── index.html              # Standalone browser-based form
+    ├── FORM_GUIDE.md           # Educator instructions and hosting
     └── WORKFLOW.md
 ```
 
@@ -142,3 +171,8 @@ For a new GitHub repository, create an **empty repository**, add the chosen remo
 ## License and attribution
 
 **No software/content license is included.** Choose and add a license deliberately before treating this as an open-source project. External laws, standards and linked reference materials remain subject to their original terms and should be linked/attributed rather than copied without review.
+
+
+## Privacy preflight and response redaction (v2.2)
+
+**Before sharing student-specific data with AI:** use the offline [PII redaction guide](docs/PRIVACY_AND_REDACTION.md), the [scanner](scripts/pii_redact.py) in an approved local environment and a human privacy reviewer. This is not a compliance certification. Both editions now **redact PII in generated responses** using typed `[[REDACTED: TYPE #001]]` markers and a conspicuous record-entry substitution warning. No additional Project knowledge files are needed; this behavior is embedded in both projects' instruction texts and 2-/5-file bundles. [Review checklist](templates/shared/pii-redaction-review.md).
