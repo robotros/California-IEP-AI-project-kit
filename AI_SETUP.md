@@ -38,7 +38,7 @@ Both editions keep the **same full Project Instructions files**. ChatGPT's proje
 
 ### Step 2a — Where the instruction text goes
 
-**ChatGPT:** Paste the project's instruction **summary** into the Instructions field. Do not paste the full `PROJECT_INSTRUCTIONS.md` there; it is over 8000 characters and will not fit. Then upload that full file as a knowledge file, in addition to the edition files. Recorded summary lengths: Essential Standards **7484** characters (`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`); IEP Goal Generator **6386** characters (`projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md`). Both are strictly under 8000. The full instruction files stay intact.
+**ChatGPT:** Paste the project's instruction **summary** into the Instructions field. Do not paste the full `PROJECT_INSTRUCTIONS.md` there; it is over 8000 characters and will not fit. Then upload that full file as a knowledge file, in addition to the edition files. Recorded summary lengths: Essential Standards **7849** characters (`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`); IEP Goal Generator **6386** characters (`projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md`). Both are strictly under 8000. The full instruction files stay intact.
 
 **Another platform whose Instructions field accepts the full file:** paste `PROJECT_INSTRUCTIONS.md` into that field. Upload it as knowledge only when that platform has no separate Instructions field, or when the user asks for the full text to be loaded as a file.
 
@@ -58,7 +58,7 @@ Use this path for Grok and for every platform that cannot create persistent proj
 
 ### Project A — California Essential Standards AI
 
-**ChatGPT Instructions (paste this summary, 7484 characters):** [`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`](projects/essential-standards/INSTRUCTIONS_SUMMARY.md).
+**ChatGPT Instructions (paste this summary, 7849 characters):** [`projects/essential-standards/INSTRUCTIONS_SUMMARY.md`](projects/essential-standards/INSTRUCTIONS_SUMMARY.md).
 
 **Full instructions (keep intact; upload as a ChatGPT knowledge file):** [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md).
 

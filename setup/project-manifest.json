@@ -48,7 +48,7 @@
       "name": "California Essential Standards AI",
       "instructions": "projects/essential-standards/PROJECT_INSTRUCTIONS.md",
       "instruction_summary": "projects/essential-standards/INSTRUCTIONS_SUMMARY.md",
-      "instruction_summary_character_count": 7484,
+      "instruction_summary_character_count": 7849,
       "editions": {
         "lightweight": {
           "knowledge_files": [

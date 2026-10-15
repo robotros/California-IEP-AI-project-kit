@@ -43,7 +43,7 @@ Give your AI assistant **[`AI_SETUP.md`](AI_SETUP.md)**. It will guide creation 
 | **Lightweight (recommended for Free)** | 2 | 2 | 3 (2 Free slots left) |
 | **Full (detailed templates and examples)** | 5 | 5 | 6 (over the Free 5-file cap) |
 
-On ChatGPT, paste each project's instruction summary into **Instructions** (Essential Standards 7484 characters; IEP Goal Generator 6386 characters; both under the 8000-character field limit) and upload the full `PROJECT_INSTRUCTIONS.md` as a knowledge file. [See exact file lists and limitations](editions/README.md). OpenAI documents Free = 5 project files with a separate daily file upload limit; Lightweight plus the instructions file fits, and Full plus that file does not. This repo does **not** automatically install into external AI services.
+On ChatGPT, paste each project's instruction summary into **Instructions** (Essential Standards 7849 characters; IEP Goal Generator 6386 characters; both under the 8000-character field limit) and upload the full `PROJECT_INSTRUCTIONS.md` as a knowledge file. [See exact file lists and limitations](editions/README.md). OpenAI documents Free = 5 project files with a separate daily file upload limit; Lightweight plus the instructions file fits, and Full plus that file does not. This repo does **not** automatically install into external AI services.
 
 ## Quick start
 

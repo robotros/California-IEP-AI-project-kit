@@ -8,7 +8,7 @@ Choose `lightweight` by default. See `setup/project-manifest.json` for exact 2-f
 
 ChatGPT project Instructions allow at most 8000 characters. Paste the maintained summary into that field and upload the full `PROJECT_INSTRUCTIONS.md` as a knowledge file:
 
-- **California Essential Standards AI:** summary `projects/essential-standards/INSTRUCTIONS_SUMMARY.md` (7484 characters). Full text: `projects/essential-standards/PROJECT_INSTRUCTIONS.md`.
+- **California Essential Standards AI:** summary `projects/essential-standards/INSTRUCTIONS_SUMMARY.md` (7849 characters). Full text: `projects/essential-standards/PROJECT_INSTRUCTIONS.md`.
 - **California IEP Goal Generator:** summary `projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md` (6386 characters). Full text: `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`.
 
 If the assistant cannot create persistent projects — including Grok — do not stop after saying so. Start the manual in-chat walkthrough immediately, have the user paste or attach each file, and do not claim a project was created.
