@@ -9,7 +9,7 @@
 
 # TEMPLATE — IEP Goal Draft / Revision Request
 
-Copy into **California IEP Goal Generator 2.0** after supplying the student profile section in `01_STUDENT_CONTEXT_AND_BASELINE.md` and the present-levels/baseline section in `01_STUDENT_CONTEXT_AND_BASELINE.md`.
+Copy into **California IEP Goal Generator** after supplying the student profile section in `01_STUDENT_CONTEXT_AND_BASELINE.md` and the present-levels/baseline section in `01_STUDENT_CONTEXT_AND_BASELINE.md`.
 
 ## Task
 
@@ -54,7 +54,7 @@ Copy into **California IEP Goal Generator 2.0** after supplying the student prof
 # TEMPLATE — IEP Goal Draft & Progress-Monitoring Plan
 
 **DRAFT — HUMAN IEP TEAM REVIEW REQUIRED**  
-**Project:** California IEP Goal Generator 2.0  
+**Project:** California IEP Goal Generator  
 **Prepared on:** [date]  
 **De-identified student alias / enrolled grade:** [ ]  
 **Domain and goal number:** [ ]  

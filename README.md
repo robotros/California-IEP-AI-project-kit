@@ -49,7 +49,7 @@ Copy each project's `PROJECT_INSTRUCTIONS.md` into the platform's dedicated **Pr
 
 1. **Clone/unzip the repository.** No installation or dependencies are required; these are Markdown instructions and templates.
 2. **Select an edition**, using the [guided setup page](AI_SETUP.md) (Lightweight = 2 supporting files per project; Full = 5). **Create two separate AI projects** (or equivalent configured assistants):
-   - Paste [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) into the **IEP Goal Generator 2.0** project's instruction area.
+   - Paste [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) into the **IEP Goal Generator** project's instruction area.
    - Paste [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](projects/essential-standards/PROJECT_INSTRUCTIONS.md) into the **Essential Standards AI** project's instruction area.
 3. **Configure local rules** using [`templates/shared/local-configuration.md`](templates/shared/local-configuration.md). Keep local configuration and student-specific data in an approved private environment, **outside this public/shared repository**.
 4. **Attach only the knowledge files listed for that edition** in [`AI_SETUP.md`](AI_SETUP.md). The original source guide is also preserved at [`references/authoritative-sources-and-rules.md`](references/authoritative-sources-and-rules.md); recheck official standards and legal sources before use.
@@ -116,7 +116,7 @@ Official California standards + approved local curriculum
               human/source verification
                          │
                          ▼
-            IEP Goal Generator 2.0
+            IEP Goal Generator
              ├── De-identified student context
              ├── Present levels and measurable baseline
              ├── Draft individualized annual goals

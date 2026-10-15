@@ -8,7 +8,7 @@ Choose `lightweight` by default. See `setup/project-manifest.json` for exact 2-f
 
 
 - **California Essential Standards AI:** use `projects/essential-standards/PROJECT_INSTRUCTIONS.md` as the primary instruction text.
-- **California IEP Goal Generator 2.0:** use `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md` as the primary instruction text.
+- **California IEP Goal Generator:** use `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md` as the primary instruction text.
 - The public `references/` and `templates/` files are support material, not substitutes for instructions.
 - Use only public fictional sample data for testing. Never request, commit, upload, display, or echo student-identifiable records during setup.
 

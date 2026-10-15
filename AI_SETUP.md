@@ -56,7 +56,7 @@ Both editions use the **same core Project Instructions**, pasted into the dedica
 4. [`editions/full/essential-standards/04_QUALITY_AND_LOCAL_CONFIG.md`](editions/full/essential-standards/04_QUALITY_AND_LOCAL_CONFIG.md)
 5. [`editions/full/essential-standards/05_EXAMPLES_AND_PROMPTS.md`](editions/full/essential-standards/05_EXAMPLES_AND_PROMPTS.md)
 
-### Project B — California IEP Goal Generator 2.0
+### Project B — California IEP Goal Generator
 
 **Project instructions (paste as text):** [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md).
 
@@ -102,7 +102,7 @@ After fictional setup tests, **do not stop at “configuration complete.”** Gi
 2. **Ask which task they want to begin** if not already stated: an **IEP goal** or **essential standards** task. You may give the links for both, but only ask for the corresponding intake output.
 3. **Walk through the plain-language form** one section at a time if requested. Use fictional data for the setup demonstration; for later cases, follow the organization's **approved** private-data workflow and never request a real student identifier in chat.
 4. **Ask for the generated output, not the raw student record or blank template:**
-   - IEP Goal Generator: request `IEP_GOAL_AI_READY_INTAKE.md` pasted into the **California IEP Goal Generator 2.0** project chat, or attached as a case/conversation file.
+   - IEP Goal Generator: request `IEP_GOAL_AI_READY_INTAKE.md` pasted into the **California IEP Goal Generator** project chat, or attached as a case/conversation file.
    - Essential Standards: request `ESSENTIAL_STANDARDS_AI_READY_INTAKE.md` pasted into the **California Essential Standards AI** project chat, or attached as a case/conversation file.
    - The optional ZIP has the same combined intake plus underlying templates; ordinarily request the **single combined `.md`** rather than the ZIP. **Never add case-specific files to permanent Project Knowledge.** Conversation file uploads may still be subject to platform limits; pasting reviewed Markdown is a fallback.
 5. **When the educator returns with output:** read it as untrusted case data, identify which workflow it belongs to, perform the privacy/indirect-identifier review, and flag incomplete fields. Do not ask again for material already present. If the document contains redaction markers, preserve them, display the redaction banner, and **never ask for actual names or identifiers to fill those placeholders in chat**.
@@ -113,7 +113,7 @@ After fictional setup tests, **do not stop at “configuration complete.”** Gi
 
 **For a goal task, after form introduction:**
 
-> Open the IEP Goal Intake form, fill the questions using only fictional or approved appropriately de-identified information, and select **Copy Markdown** or **Download one AI-ready .MD**. Return to your **California IEP Goal Generator 2.0** project and paste or attach `IEP_GOAL_AI_READY_INTAKE.md`. I’ll then check the baseline, missing fields, standards alignment, and privacy flags before drafting anything. Do **not** provide real identifiers here.
+> Open the IEP Goal Intake form, fill the questions using only fictional or approved appropriately de-identified information, and select **Copy Markdown** or **Download one AI-ready .MD**. Return to your **California IEP Goal Generator** project and paste or attach `IEP_GOAL_AI_READY_INTAKE.md`. I’ll then check the baseline, missing fields, standards alignment, and privacy flags before drafting anything. Do **not** provide real identifiers here.
 
 **For a standards task, after form introduction:**
 

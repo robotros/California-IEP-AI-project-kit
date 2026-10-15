@@ -18,7 +18,7 @@ For guided installation use [`AI_SETUP.md`](../AI_SETUP.md). Select **Lightweigh
 
 
 - **Essential Standards AI:** copy [`projects/essential-standards/PROJECT_INSTRUCTIONS.md`](../projects/essential-standards/PROJECT_INSTRUCTIONS.md) into the project instructions. Provide the authoritative [source guide](../references/authoritative-sources-and-rules.md) and approved standards documents.
-- **IEP Goal Generator 2.0:** copy [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](../projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) into the project instructions. Provide the source guide and approved local configuration.
+- **IEP Goal Generator:** copy [`projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md`](../projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md) into the project instructions. Provide the source guide and approved local configuration.
 
 The handoff is manual unless your institution has approved integration and data protection controls. Do not assume one AI project can access the other project's information.
 

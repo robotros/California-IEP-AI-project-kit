@@ -1,4 +1,4 @@
-# IEP Goal Generator 2.0 — Lightweight Forms and Workflow
+# IEP Goal Generator — Lightweight Forms and Workflow
 
 **Edition:** LIGHTWEIGHT. **Knowledge file 1 of 2.** Paste the separate `projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md` into the AI project's **Instructions** field. This is a support file, not a substitute for the project instructions.
 

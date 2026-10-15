@@ -8,7 +8,7 @@ form=m['intake_form']
 assert form.get('setup_handoff_required') is True
 assert form.get('require_real_case_during_setup') is False
 for name, filename, project in [
-('iep-goal-generator', 'IEP_GOAL_AI_READY_INTAKE.md','California IEP Goal Generator 2.0'),
+('iep-goal-generator', 'IEP_GOAL_AI_READY_INTAKE.md','California IEP Goal Generator'),
 ('essential-standards','ESSENTIAL_STANDARDS_AI_READY_INTAKE.md','California Essential Standards AI')]:
     item=form['request_on_first_task'][name]
     assert item['output']==filename and item['target_project']==project

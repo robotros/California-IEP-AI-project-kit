@@ -14,7 +14,7 @@ The form is a **standalone, client-side HTML file** at [`docs/index.html`](index
 
 Your setup assistant should have already configured and tested both projects with **fictional data**. Select the tab that matches your task, complete the form using only information allowed by your institution, and return the resulting **single combined Markdown** to the matching project chat. You can paste it directly instead of uploading another file.
 
-- **IEP Goal Intake** → `IEP_GOAL_AI_READY_INTAKE.md` → **California IEP Goal Generator 2.0**.
+- **IEP Goal Intake** → `IEP_GOAL_AI_READY_INTAKE.md` → **California IEP Goal Generator**.
 - **Essential Standards** → `ESSENTIAL_STANDARDS_AI_READY_INTAKE.md` → **California Essential Standards AI**.
 
 If you have already supplied the intake information to the AI, it should not make you fill the form again. If you cannot use the form, ask for a guided chat-based intake instead. Never provide real identifiers in an unapproved chat, and never replace `[[REDACTED: ...]]` placeholders in the AI conversation.

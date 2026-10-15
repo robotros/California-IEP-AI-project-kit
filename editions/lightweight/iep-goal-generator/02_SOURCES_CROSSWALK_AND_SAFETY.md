@@ -1,4 +1,4 @@
-# IEP Goal Generator 2.0 — Standards, Sources, Crosswalk and Safeguards
+# IEP Goal Generator — Standards, Sources, Crosswalk and Safeguards
 
 **Edition:** LIGHTWEIGHT. **Knowledge file 2 of 2.** Use alongside the full Project Instructions text in the Instructions field and the companion lightweight workflow file.
 

@@ -21,7 +21,7 @@ if len(insts)==2 and hashlib.sha256(insts[0]).digest()==hashlib.sha256(insts[1])
 if len(insts)==2:
     for p in m["projects"]:
         data=(ROOT/p["instructions"]).read_text(encoding="utf-8")
-        label="Essential Standards AI" if p["id"]=="essential-standards" else "IEP Goal Generator 2.0"
+        label="Essential Standards AI" if p["id"]=="essential-standards" else "IEP Goal Generator"
         if label.lower() not in data.lower():errors.append(f"Wrong project role: {p['id']}")
 for file in ROOT.rglob("*.md"):
     text=file.read_text(encoding="utf-8")

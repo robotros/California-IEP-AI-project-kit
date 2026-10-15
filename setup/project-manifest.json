@@ -15,7 +15,7 @@
   "projects": [
     {
       "id": "iep-goal-generator",
-      "name": "California IEP Goal Generator 2.0",
+      "name": "California IEP Goal Generator",
       "instructions": "projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md",
       "editions": {
         "lightweight": {
@@ -99,7 +99,7 @@
     "request_on_first_task": {
       "iep-goal-generator": {
         "output": "IEP_GOAL_AI_READY_INTAKE.md",
-        "target_project": "California IEP Goal Generator 2.0"
+        "target_project": "California IEP Goal Generator"
       },
       "essential-standards": {
         "output": "ESSENTIAL_STANDARDS_AI_READY_INTAKE.md",

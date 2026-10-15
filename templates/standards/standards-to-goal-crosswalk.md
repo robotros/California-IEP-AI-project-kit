@@ -1,6 +1,6 @@
 # TEMPLATE — Verified Standards-to-IEP Goal Handoff
 
-Use **California Essential Standards AI** to complete the standards side, then pass this file to **California IEP Goal Generator 2.0** along with de-identified student intake and actual baseline data.
+Use **California Essential Standards AI** to complete the standards side, then pass this file to **California IEP Goal Generator** along with de-identified student intake and actual baseline data.
 
 **Student alias (optional; blank for generic curriculum mapping):** [ ]  
 **Enrolled grade / subject:** [REQUIRED]  

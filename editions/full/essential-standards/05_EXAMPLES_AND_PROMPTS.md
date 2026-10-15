@@ -73,7 +73,7 @@ These prompts assume you supplied the relevant blank/completed Markdown template
 
 ## Prompt 3 — Draft a measurable annual goal
 
-> Act under IEP Goal Generator 2.0 instructions. Use attached de-identified intake (`03`), repeatable baseline (`04`), request (`05`), and verified standards crosswalk (`08`). Draft **one** individualized annual goal in the `06_IEP_GOAL_OUTPUT_TEMPLATE.md` format. Clearly separate observed information, proposed target choices, verification needed, and the plan to report progress. If anything essential is missing, flag `PROVISIONAL — MISSING DATA` and state the shortest possible collection plan. Do not assume 80% mastery or a fixed prompt level.
+> Act under IEP Goal Generator instructions. Use attached de-identified intake (`03`), repeatable baseline (`04`), request (`05`), and verified standards crosswalk (`08`). Draft **one** individualized annual goal in the `06_IEP_GOAL_OUTPUT_TEMPLATE.md` format. Clearly separate observed information, proposed target choices, verification needed, and the plan to report progress. If anything essential is missing, flag `PROVISIONAL — MISSING DATA` and state the shortest possible collection plan. Do not assume 80% mastery or a fixed prompt level.
 
 ## Prompt 4 — Audit and repair an existing goal
 
