@@ -5,7 +5,7 @@
   "repo_url": "https://github.com/robotros/California-IEP-AI-project-kit",
   "default_specialist_edition": "light",
   "source_version": "2.3.1",
-  "status": "REVIEW_BRANCH_ONLY_NOT_INSTALLED",
+  "status": "PUBLIC_REPOSITORY_PUBLISHED_INSTALLATION_NEEDS_VERIFICATION",
   "roles": {
     "essential-standards": {
       "name": "California Essential Standards AI",
@@ -127,5 +127,18 @@
     "entrypoint": "docs/index.html",
     "guide": "docs/FORM_GUIDE.md",
     "setup_handoff_required": true
+  },
+  "source_resolution": {
+    "priority": [
+      "USER_SUPPLIED_ZIP",
+      "USER_SUPPLIED_REPOSITORY_URL",
+      "CANONICAL_PUBLIC_GITHUB_MAIN"
+    ],
+    "default_public_repo": "https://github.com/robotros/California-IEP-AI-project-kit",
+    "default_branch": "main",
+    "access": "READ_ONLY_UNTIL_EXPLICIT_APPROVAL",
+    "fetch_required_before_claims": true,
+    "github_unavailable_fallback": "DISCLOSE_UNVERIFIED_THEN_REQUEST_USER_ZIP_OR_FILES_OR_GUIDE_MANUAL_DOWNLOAD",
+    "no_fabricated_files": true
   }
 }

@@ -1,5 +1,6 @@
 # Installation checklist — v2.4.0
 
+- [ ] Installer used supplied ZIP or repository link, **otherwise defaulted automatically to public https://github.com/robotros/California-IEP-AI-project-kit** (read-only); version verified or GitHub-unavailable limitation disclosed
 - [ ] Platform Projects/agents and native Skills capability report shown (all six targets)
 - [ ] Account, plan/tenant/harness, owner, allowed data class and permitted tools recorded
 - [ ] Backup of existing instructions and knowledge file list created privately

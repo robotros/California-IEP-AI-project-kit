@@ -33,5 +33,24 @@ for role,rd in m["roles"].items():
     if not expected and not any(q.endswith("/SKILL.md") for q in entries):errs.append(f"Bad Claude ZIP {z}")
 for r in ("README.md","AI_SETUP_PROMPT.md","VALIDATION_REPORT.md","setup/PLATFORM_SUPPORT_MATRIX.md","setup/INSTALL_CHECKLIST.md","docs/index.html"):
  if not (root/r).is_file():errs.append(f"Missing {r}")
+# Public-source and license regression gates for post-publication maintenance.
+canonical = "https://github.com/robotros/California-IEP-AI-project-kit"
+source = m.get("source_resolution", {})
+if source.get("default_public_repo") != canonical or source.get("default_branch") != "main":
+ errs.append("Public GitHub fallback missing or not main")
+if source.get("priority", [])[:2] != ["USER_SUPPLIED_ZIP","USER_SUPPLIED_REPOSITORY_URL"]:
+ errs.append("User-supplied source precedence changed")
+if source.get("access") != "READ_ONLY_UNTIL_EXPLICIT_APPROVAL":
+ errs.append("Default repo source must remain read-only")
+for rel in ("AI_SETUP_PROMPT.md","AGENTS.md","AI_SETUP.md","README.md","setup/PLATFORM_INSTALLATION.md"):
+ content=(root/rel).read_text(encoding="utf-8")
+ if canonical not in content or "ZIP" not in content:
+  errs.append(f"Missing public-source fallback disclosure: {rel}")
+license_text=(root/"LICENSE").read_text(encoding="utf-8") if (root/"LICENSE").is_file() else ""
+for phrase in ("MIT License","Copyright (c) 2026 robotros","Permission is hereby granted","THE SOFTWARE IS PROVIDED"):
+ if phrase not in license_text:
+  errs.append("Missing or malformed MIT license text: "+phrase)
+if "[MIT License](LICENSE)" not in (root/"README.md").read_text(encoding="utf-8"):
+ errs.append("README does not link MIT license")
 print("FAIL:\n" + "\n".join(errs) if errs else "PASS — Factory v1.4.1 specialist structural checks")
 sys.exit(bool(errs))
