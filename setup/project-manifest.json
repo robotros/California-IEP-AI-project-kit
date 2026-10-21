@@ -1,119 +1,131 @@
 {
   "kit": "California Special Education AI Project Kit",
-  "version": "2.3.1-form-first-handoff",
-  "guide": "AI_SETUP.md",
-  "default_edition": "lightweight",
-  "file_limits": {
-    "chatgpt_free_project_files": 5,
-    "lightweight_knowledge_files_per_project": 2,
-    "full_knowledge_files_per_project": 5,
-    "instructions_counted_as_file_only_if_uploaded": true,
-    "chatgpt_project_instructions_character_limit": 8000,
-    "chatgpt_setup": "Paste the instruction summary into the Instructions field and upload the full PROJECT_INSTRUCTIONS.md as a knowledge file.",
-    "manual_walkthrough_when_projects_cannot_be_created": "Start the in-chat walkthrough immediately, including for Grok. Do not stop after stating the limitation. Do not claim a project was created.",
-    "note": "ChatGPT Instructions allow 8000 characters. Paste the summary there and upload the full instructions file as knowledge. Lightweight is then 3 files; Full is 6 and exceeds the Free 5-file cap. Free upload rate is separately limited and may delay completion."
-  },
-  "base_url": "https://github.com/robotros/California-IEP-AI-project-kit",
-  "privacy": "Never use identifiable student records during setup; only approved private systems may process permitted education records.",
-  "projects": [
-    {
-      "id": "iep-goal-generator",
-      "name": "California IEP Goal Generator",
-      "instructions": "projects/iep-goal-generator/PROJECT_INSTRUCTIONS.md",
-      "instruction_summary": "projects/iep-goal-generator/INSTRUCTIONS_SUMMARY.md",
-      "instruction_summary_character_count": 6386,
-      "editions": {
-        "lightweight": {
-          "knowledge_files": [
-            "editions/lightweight/iep-goal-generator/01_GOAL_WORKFLOW_AND_TEMPLATES.md",
-            "editions/lightweight/iep-goal-generator/02_SOURCES_CROSSWALK_AND_SAFETY.md"
-          ],
-          "file_count": 2
-        },
-        "full": {
-          "knowledge_files": [
-            "editions/full/iep-goal-generator/01_STUDENT_CONTEXT_AND_BASELINE.md",
-            "editions/full/iep-goal-generator/02_GOAL_REQUEST_AND_OUTPUT.md",
-            "editions/full/iep-goal-generator/03_STANDARDS_CROSSWALK_AND_SOURCES.md",
-            "editions/full/iep-goal-generator/04_QUALITY_AND_LOCAL_CONFIG.md",
-            "editions/full/iep-goal-generator/05_EXAMPLES_AND_PROMPTS.md"
-          ],
-          "file_count": 5
-        }
-      },
-      "source_modules": "templates/ and references/ contain the unbundled detailed originals"
-    },
-    {
-      "id": "essential-standards",
+  "kit_version": "2.4.0",
+  "factory_spec_version": "1.4.1",
+  "repo_url": "https://github.com/robotros/California-IEP-AI-project-kit",
+  "default_specialist_edition": "light",
+  "source_version": "2.3.1",
+  "status": "REVIEW_BRANCH_ONLY_NOT_INSTALLED",
+  "roles": {
+    "essential-standards": {
       "name": "California Essential Standards AI",
-      "instructions": "projects/essential-standards/PROJECT_INSTRUCTIONS.md",
-      "instruction_summary": "projects/essential-standards/INSTRUCTIONS_SUMMARY.md",
-      "instruction_summary_character_count": 7849,
       "editions": {
-        "lightweight": {
+        "light": {
+          "instructions": "specialists/light/essential-standards/PROJECT_INSTRUCTIONS.txt",
           "knowledge_files": [
-            "editions/lightweight/essential-standards/01_STANDARDS_WORKFLOW_AND_TEMPLATES.md",
-            "editions/lightweight/essential-standards/02_SOURCES_RULES_AND_REVIEW.md"
+            "specialists/light/essential-standards/01_CONTEXT.md",
+            "specialists/light/essential-standards/02_OPERATIONS_AND_PROMPTS.md",
+            "specialists/light/essential-standards/03_QA_AND_HANDOFFS.md"
           ],
-          "file_count": 2
+          "knowledge_count": 3,
+          "skill_decision": "NATIVE_SKILL_WHEN_ELIGIBLE_ELSE_PORTABLE_FALLBACK",
+          "skill_source": "skills/light/essential-standards/verify-california-standards-light/SKILL.md",
+          "skill_zip_claude": "distributions/essential-standards-light-claude-skill.zip",
+          "skill_zip_root": "distributions/essential-standards-light-root-skill.zip",
+          "microsoft_agent_builder_txt_files": [
+            "adapters/microsoft-365-agent-builder/light/essential-standards/01_CONTEXT.txt",
+            "adapters/microsoft-365-agent-builder/light/essential-standards/02_OPERATIONS_AND_PROMPTS.txt",
+            "adapters/microsoft-365-agent-builder/light/essential-standards/03_QA_AND_HANDOFFS.txt"
+          ],
+          "deployment": "NEEDS_VERIFICATION",
+          "operational_test": "NEEDS_VERIFICATION"
         },
         "full": {
+          "instructions": "specialists/full/essential-standards/PROJECT_INSTRUCTIONS.txt",
           "knowledge_files": [
-            "editions/full/essential-standards/01_STANDARDS_REVIEW.md",
-            "editions/full/essential-standards/02_STANDARDS_TO_GOAL_CROSSWALK.md",
-            "editions/full/essential-standards/03_OFFICIAL_SOURCES_AND_RULES.md",
-            "editions/full/essential-standards/04_QUALITY_AND_LOCAL_CONFIG.md",
-            "editions/full/essential-standards/05_EXAMPLES_AND_PROMPTS.md"
+            "specialists/full/essential-standards/01_CHARTER_AND_SCOPE.md",
+            "specialists/full/essential-standards/02_REQUIREMENTS.md",
+            "specialists/full/essential-standards/03_WORKFLOWS.md",
+            "specialists/full/essential-standards/04_ROLES_AND_INTERFACES.md",
+            "specialists/full/essential-standards/05_PROMPT_LIBRARY.md",
+            "specialists/full/essential-standards/06_TOOLS_AND_DATA.md",
+            "specialists/full/essential-standards/07_QA_AND_TESTS.md",
+            "specialists/full/essential-standards/08_DEPLOYMENT_AND_CHANGELOG.md"
           ],
-          "file_count": 5
+          "knowledge_count": 8,
+          "skill_decision": "NATIVE_SKILL_WHEN_ELIGIBLE_ELSE_PORTABLE_FALLBACK",
+          "skill_source": "skills/full/essential-standards/verify-california-standards-full/SKILL.md",
+          "skill_zip_claude": "distributions/essential-standards-full-claude-skill.zip",
+          "skill_zip_root": "distributions/essential-standards-full-root-skill.zip",
+          "microsoft_agent_builder_txt_files": [
+            "adapters/microsoft-365-agent-builder/full/essential-standards/01_CHARTER_AND_SCOPE.txt",
+            "adapters/microsoft-365-agent-builder/full/essential-standards/02_REQUIREMENTS.txt",
+            "adapters/microsoft-365-agent-builder/full/essential-standards/03_WORKFLOWS.txt",
+            "adapters/microsoft-365-agent-builder/full/essential-standards/04_ROLES_AND_INTERFACES.txt",
+            "adapters/microsoft-365-agent-builder/full/essential-standards/05_PROMPT_LIBRARY.txt",
+            "adapters/microsoft-365-agent-builder/full/essential-standards/06_TOOLS_AND_DATA.txt",
+            "adapters/microsoft-365-agent-builder/full/essential-standards/07_QA_AND_TESTS.txt",
+            "adapters/microsoft-365-agent-builder/full/essential-standards/08_DEPLOYMENT_AND_CHANGELOG.txt"
+          ],
+          "deployment": "NEEDS_VERIFICATION",
+          "operational_test": "NEEDS_VERIFICATION"
         }
-      },
-      "source_modules": "templates/ and references/ contain the unbundled detailed originals"
+      }
+    },
+    "iep-goal-generator": {
+      "name": "California IEP Goal Generator",
+      "editions": {
+        "light": {
+          "instructions": "specialists/light/iep-goal-generator/PROJECT_INSTRUCTIONS.txt",
+          "knowledge_files": [
+            "specialists/light/iep-goal-generator/01_CONTEXT.md",
+            "specialists/light/iep-goal-generator/02_OPERATIONS_AND_PROMPTS.md",
+            "specialists/light/iep-goal-generator/03_QA_AND_HANDOFFS.md"
+          ],
+          "knowledge_count": 3,
+          "skill_decision": "NATIVE_SKILL_WHEN_ELIGIBLE_ELSE_PORTABLE_FALLBACK",
+          "skill_source": "skills/light/iep-goal-generator/audit-iep-goal-measurement-light/SKILL.md",
+          "skill_zip_claude": "distributions/iep-goal-generator-light-claude-skill.zip",
+          "skill_zip_root": "distributions/iep-goal-generator-light-root-skill.zip",
+          "microsoft_agent_builder_txt_files": [
+            "adapters/microsoft-365-agent-builder/light/iep-goal-generator/01_CONTEXT.txt",
+            "adapters/microsoft-365-agent-builder/light/iep-goal-generator/02_OPERATIONS_AND_PROMPTS.txt",
+            "adapters/microsoft-365-agent-builder/light/iep-goal-generator/03_QA_AND_HANDOFFS.txt"
+          ],
+          "deployment": "NEEDS_VERIFICATION",
+          "operational_test": "NEEDS_VERIFICATION"
+        },
+        "full": {
+          "instructions": "specialists/full/iep-goal-generator/PROJECT_INSTRUCTIONS.txt",
+          "knowledge_files": [
+            "specialists/full/iep-goal-generator/01_CHARTER_AND_SCOPE.md",
+            "specialists/full/iep-goal-generator/02_REQUIREMENTS.md",
+            "specialists/full/iep-goal-generator/03_WORKFLOWS.md",
+            "specialists/full/iep-goal-generator/04_ROLES_AND_INTERFACES.md",
+            "specialists/full/iep-goal-generator/05_PROMPT_LIBRARY.md",
+            "specialists/full/iep-goal-generator/06_TOOLS_AND_DATA.md",
+            "specialists/full/iep-goal-generator/07_QA_AND_TESTS.md",
+            "specialists/full/iep-goal-generator/08_DEPLOYMENT_AND_CHANGELOG.md"
+          ],
+          "knowledge_count": 8,
+          "skill_decision": "NATIVE_SKILL_WHEN_ELIGIBLE_ELSE_PORTABLE_FALLBACK",
+          "skill_source": "skills/full/iep-goal-generator/audit-iep-goal-measurement-full/SKILL.md",
+          "skill_zip_claude": "distributions/iep-goal-generator-full-claude-skill.zip",
+          "skill_zip_root": "distributions/iep-goal-generator-full-root-skill.zip",
+          "microsoft_agent_builder_txt_files": [
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/01_CHARTER_AND_SCOPE.txt",
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/02_REQUIREMENTS.txt",
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/03_WORKFLOWS.txt",
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/04_ROLES_AND_INTERFACES.txt",
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/05_PROMPT_LIBRARY.txt",
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/06_TOOLS_AND_DATA.txt",
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/07_QA_AND_TESTS.txt",
+            "adapters/microsoft-365-agent-builder/full/iep-goal-generator/08_DEPLOYMENT_AND_CHANGELOG.txt"
+          ],
+          "deployment": "NEEDS_VERIFICATION",
+          "operational_test": "NEEDS_VERIFICATION"
+        }
+      }
     }
-  ],
-  "manual_workflow": "docs/WORKFLOW.md",
-  "limitations": [
-    "No universal automated installer; ability to create project settings depends on assistant/platform authorization",
-    "Education drafting support only; no legal compliance certification or IEP team replacement"
-  ],
-  "pii_redaction": {
-    "local_scanner": "scripts/pii_redact.py",
-    "policy": "docs/PRIVACY_AND_REDACTION.md",
-    "review_template": "templates/shared/pii-redaction-review.md",
-    "automated_scan_is_not_deidentification": true,
-    "ai_output_markers": "[[REDACTED: CATEGORY #NNN]]",
-    "requires_human_review": true,
-    "record_entry_substitution": "authorized system of record only",
-    "included_in_both_editions_without_new_knowledge_uploads": true
+  },
+  "permissions": {
+    "student_data": "SYNTHETIC_ONLY_UNLESS_EDUCATIONAL_INSTITUTION_AUTHORIZES",
+    "external_writes": "EXPLICIT_APPROVAL_AND_AUTHENTICATED_TOOL_ONLY",
+    "final_iep": "HUMAN_ONLY"
   },
   "intake_form": {
     "entrypoint": "docs/index.html",
     "guide": "docs/FORM_GUIDE.md",
-    "type": "standalone-client-side-html",
-    "optionally_hosted_on_github_pages": "https://robotros.github.io/California-IEP-AI-project-kit/",
-    "requires_pages_owner_enablement": true,
-    "backend": false,
-    "writes_server_data": false,
-    "generates": [
-      "IEP_GOAL_AI_READY_INTAKE.md",
-      "ESSENTIAL_STANDARDS_AI_READY_INTAKE.md",
-      "privacy-review.md"
-    ],
-    "attachment_guidance": "Generated case inputs are conversation-level attachments, not permanent project knowledge files",
-    "automated_redaction_is_not_proof_of_deidentification": true,
-    "setup_handoff_required": true,
-    "introduce_after": "two-project configuration and fictional tests",
-    "request_on_first_task": {
-      "iep-goal-generator": {
-        "output": "IEP_GOAL_AI_READY_INTAKE.md",
-        "target_project": "California IEP Goal Generator"
-      },
-      "essential-standards": {
-        "output": "ESSENTIAL_STANDARDS_AI_READY_INTAKE.md",
-        "target_project": "California Essential Standards AI"
-      }
-    },
-    "fallback": "Accept already-supplied approved intake or guide conversational intake when form unavailable",
-    "require_real_case_during_setup": false
+    "setup_handoff_required": true
   }
 }
