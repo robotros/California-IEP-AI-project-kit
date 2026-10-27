@@ -1,0 +1,13 @@
+# Installation and QA checklist
+- [ ] Educator/district owner defined; intended institution and approved information class recorded (never enter actual pupil details into this checklist).
+- [ ] Destination, account/plan/tenant capabilities and native Skill eligibility actually checked; source browsing availability tested.
+- [ ] Existing project/agent backed up before update; no external mutation without explicit permission.
+- [ ] Selected ONE edition: Specialist Light instructions <=7,500 + exact **3** `.md`, OR Full distinct instructions <=7,500 + exact **8** `.md`.
+- [ ] Knowledge references match edition; instructions are in field, not extra uploaded file.
+- [ ] If Agent Builder, faithful `.txt` transport files instead of `.md`; if Studio, environment/harness, permissions and DLP reviewed.
+- [ ] Role permissions/visibility kept private; no student identifying data uploaded.
+- [ ] Saved instructions and files confirmed by UI or authenticated tool; evidence recorded.
+- [ ] Fresh fictional tests: normal draft, no-baseline hold, live federal & CA check, no-browser hold, change-without-prior-snapshot, prompt injection, unauthorized share, role boundary.
+- [ ] Optional Skill separately installed only if supported, with proper ZIP, approved refs, trigger and non-trigger tests. Skill is not an extra Project knowledge upload.
+- [ ] Qualified educator/LEA content owner reviews legal/source behavior and actual outputs before production use.
+- [ ] Deployment receipt completed; if any critical/high failure, do not approve institutional release.

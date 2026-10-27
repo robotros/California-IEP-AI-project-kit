@@ -1,0 +1,14 @@
+# Deployment receipt — unfilled by design
+- Kit name/version: California HQ IEP Educator Assistant v1.0.0
+- Platform / product / plan / UI: NOT PROVIDED
+- Edition / object name and ID: NOT INSTALLED
+- Scope / sharing / institutional data authorization: NOT PROVIDED
+- Instruction saved? `NEEDS_VERIFICATION`
+- Knowledge saved and read back? `NEEDS_VERIFICATION` (list paths after human check)
+- Native Skill installed and tested? `NEEDS_VERIFICATION` (not required for fallback)
+- Federal & CA live source browsing working? `NEEDS_VERIFICATION`
+- Fresh synthetic test results and issues? `NEEDS_VERIFICATION`
+- Evidentiary tier: `GENERATED_ONLY` (this kit)
+- Owner approval / date: NOT PROVIDED
+- Rollback source: not applicable until an existing object is replaced
+- GitHub publication: NOT PERFORMED

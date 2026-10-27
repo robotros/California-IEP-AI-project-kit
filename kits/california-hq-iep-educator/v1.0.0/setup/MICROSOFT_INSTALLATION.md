@@ -1,0 +1,8 @@
+# Microsoft-specific installer and governance
+## Microsoft 365 Copilot Agent Builder
+Confirm supported tenant, work identity, maker permissions, ability to create a private agent and accepted file count/types. Paste edition's `PROJECT_INSTRUCTIONS.txt` in Instructions. Upload only the 3 or 8 **`.txt` files** under `adapters/microsoft-365-agent-builder/<edition>/iep-educator/` as embedded knowledge. Each copy is encoding-identical to `.md` source. Embedded files may be visible to agent users; never upload identifiable education records or school-confidential material without district/tenant approval. Add safe prompt starters, privately save, test with synthetic case and read back. Frontier preview native Skill status separately verified; Skill not connector.
+
+## Copilot Studio
+Determine maker licensing, Power Platform environment, standard vs GitHub Copilot harness, channel, authentication, consumption, DLP policy, accepted Markdown knowledge surface and allowed sources. Paste instructions and upload canonical 3/8 `.md` only where supported. Configure any tools/flows separately with explicit mapping, identity and review checkpoints. Standard harness does not imply native Skill import; Github Copilot harness Skill features require verified eligibility. Never assume it can edit a SIS/IEP record or automatically send email. Keep draft private; publication/channel deployment only after owner approval, environment readback, permissions QA and live tests.
+
+Record: tenant name redacted, environment, harness, object ID, authenticated executor, knowledge count, privacy owner approval, tool permissions, source browsing implementation, user access scope, draft/published/channel status, test evidence and rollback. Mark unknown features `NEEDS_VERIFICATION`.

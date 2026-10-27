@@ -1,0 +1,13 @@
+# Proposed regulation/guidance change record — not a policy edit
+- Report number / date:
+- Topic and educator workflow affected:
+- Federal authority / exact URL / last checked / present effective date:
+- California statute or regulation / exact URL / CDE notice / checked/effective date:
+- Prior verified legal wording/interpretation with archived version reference:
+- Actually observed material delta OR `UNDETERMINED`:
+- Pending vs current applicability / district or SELPA conflicts:
+- Impact: specialist Light (3), Full (8), both instructions, skill source/ZIPs, Microsoft txt adapter, prompts, form, tests, READMEs:
+- Required approved edits and human owner:
+- Qualified legal/SELPA reviewer decision:
+- Implementation authorization, installation evidence and fresh-chat retest:
+- Rollback archive reference:
