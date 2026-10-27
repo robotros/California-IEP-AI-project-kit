@@ -1,11 +1,11 @@
-# Import status — incomplete staging
+# Import status — complete source staging, pending runtime validation
 
-**DO NOT MERGE OR DEPLOY THIS FOLDER YET.** This branch contains the first eight documentation and form files from the new California High-Quality IEP Educator Assistant v1.0.0 package. The separately generated 53-file ZIP has **not** been uploaded to this repository.
+**Package:** California High-Quality IEP Educator Assistant v1.0.0 (Factory v1.4.1). The branch includes the standalone educator assistant’s Light (3 Markdown knowledge files) and Full (8 Markdown knowledge files), independent instructions, Microsoft Agent Builder text copies, setup documentation, offline form, prompts, templates, reference guidance, Skill source and four Skill ZIPs.
 
-Missing from GitHub: both Specialist editions' instruction and canonical knowledge files, Microsoft transport files, Skill definitions and archives, prompt templates, educator resource map and auxiliary guides. In particular, the Full 8 and Light 3 project knowledge requirements cannot yet be installed from this branch.
+**Evidence:** Repository source and required file paths have been uploaded; static package validation in VALIDATION_REPORT.md is GENERATED_ONLY / STATIC_CHECKED, not a certification. The GitHub Skill ZIPs were repackaged from the corresponding instruction/reference text; archive hashes differ from the original local distribution. Verify target platform eligibility and installation behavior independently.
 
-Source package in its originating ChatGPT conversation: `California_HQ_IEP_Educator_Assistant_v1.0.0_Factory_1.4.1.zip` (106 KB). That local artifact is not a public GitHub link; do not claim it is remotely hosted.
+**Release boundaries:** No real student data is included or authorized. Do not use with identifiable student records absent district/LEA authorization and applicable safeguards. Federal and California current-guidance checks are required for substantive IEP guidance; if current sources cannot be checked, legal/compliance determinations must stay ON HOLD. The source register is not continuously updated.
 
-**Before merge:** transfer all 53 package entries or publish an approved complete distribution artifact; compare checksums and required 3/8 counts; check source paths/links and audit the privacy/governance requirements; run static QA and fresh installed tests as appropriate. Existing `main` is unchanged.
+**Pending independently:** Live platform installation, privacy/FERPA review, fresh-chat behavioral tests, and actual Skill activation. These are NOT accomplished by a GitHub merge. Review the GitHub Actions result, the validation report, and institution requirements before deployment.
 
-All legal/compliance claims remain subject to a current state-and-federal-source verification gate and institutional approval. The static source register is not an automated monitor.
+**Change control:** Package belongs under `kits/california-hq-iep-educator/v1.0.0/`; it does not replace the repository’s original two specialist roles.
